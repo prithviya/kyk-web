@@ -74,18 +74,18 @@ function Home() {
                 <div className='uk-child-width-1-2@m uk-grid-small uk-grid-match' data-uk-grid>
                     <div>
                         <div className='uk-card uk-card-body uk-margin-large-top'>
-                            <h1 className='cust-header'>Want to know your <span>KARMA ?</span></h1>
-                            <p className='uk-margin-remove'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua laboris nisi ut aliquip ex. </p>
+                            <h1 className='cust-header'>“You are accountable for <span>your reincarnation</span> in the next life”</h1>
+                            <p className='uk-margin-remove'>This verily explains that your thoughts and actions of the past life will surely reap the outcome in the next. Your KARMA speaks from your side, the best and the grossest of your actions. </p>
                         </div>
                     </div>
                     <div className='uk-visible@m'>
                         <div class="uk-card custom-position-center">
-                            <img src= { Image.BANNER_SECT} className='rotater' />
+                            <img src= { Image.BANNER_SECT} className='rotater' alt='image_rotate' />
                         </div>
                     </div>
                     <div className='uk-hidden@m'>
                         <div class="uk-card custom-position-center">
-                            <img src= { Image.BANNER_SECT} />
+                            <img src= { Image.BANNER_SECT} alt='image_rotate'/>
                         </div>
                     </div>
                 </div>
@@ -99,7 +99,7 @@ function Home() {
                     <div className='underline-text2'>
                         <h1 className='cust-head uk-margin-remove'>About <span>Know your Karma</span></h1>
                     </div>
-                    <p className='uk-margin-top'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt <br/> ut labore et dolore magna aliqua laboris nisi ut aliquip ex.</p>
+                    <p className='uk-margin-top'>‘Know Your Karma’ is here to address this concept and ameliorate you from becoming a victim to your own actions. <br/>We are a comprehensive astrological company who strongly avow that our KARMA decides our next life <br/>based on three significant categories:<br/> VIDHI <i>(fate)</i>, MADI <i>(reasoning)</i> and GADHI <i>(state)</i>.</p>
                 </div>
                 <div className='uk-container uk-padding-large uk-padding-remove-bottom uk-padding-remove-top' >
                     <h1 className='cust-head uk-margin-small uk-margin-top'>Recent <span>Updates</span></h1>
@@ -138,25 +138,16 @@ function Home() {
                     <div>
                         <div class="uk-card uk-padding">
                             <div className='underline-text2 uk-margin-top'>
-                                <h1 className='cust-head uk-margin-remove'>About <span>Know your Karma</span></h1>
+                                <h1 className='cust-head uk-margin-remove'>What <span>We Do</span></h1>
                             </div>
                             <p className='uk-margin-top'>
-                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                sed do eiusmod tempor incididunt ut labore et dolore
-                                magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                exercitation ullamco laboris nisi ut aliquip ex ea
-                                commodo consequat. Duis aute irure dolor in
-                                reprehenderit in voluptate velit esse cillum dolore eu
-                                fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                                non proident, sunt in culpa qui officia deserunt mollit
-                                anim id est laborum."
+                            ‘Know Your Karma’ is the complete solution and guide for sorting out your astrological issues and prepare you for this life as well as the next one. You just need to update us with your gender, date, place & time of Birth and see how the wonder works.
                             </p><br/>
                             <p>
-                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                sed do eiusmod tempor incididunt ut labore et dolore
-                                magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                exercitation ullamco laboris nisi ut aliquip ex ea
-                                commodo consequat.
+                            We read and relate the positions of your Gragum and stars, activate them, deactivate them and normalize them through appropriate yugnas (rites) that will save you from landing into problems. 
+                            </p><br/>
+                            <p>
+                            Find ‘Know Your Karma’ with us to lead a happy, peaceful and righteous life now and prepare to lead the same in the next life too.
                             </p>
                         </div>
                     </div>
@@ -449,11 +440,20 @@ function Home() {
                                 <h1 className='uk-margin-top custom-tab-title'>{item.planet}</h1>
                                 <p className='uk-margin-top'>{item.content}</p>
                             </div>
+                            
                         </>
+                        
                     )
                 )}
+                
                 </div>
-               
+                <button className='button uk-text-center uk-align-center' type='button'  data-uk-toggle="target: #read_morebutton">Submit</button>
+                            
+                            <div id="read_morebutton" data-uk-modal>
+                                <div class="uk-modal-dialog uk-padding-large">
+                                    Content 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.                                           
+                                </div>
+                            </div>
             </div>
             <div className='uk-section uk-hidden@m'>
                <div className='uk-container'>

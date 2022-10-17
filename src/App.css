@@ -123,13 +123,13 @@
 }
 .cust-header
 {
-  font-size: 3.7rem;
+  font-size: 3rem;
   font-family: 'Philosopher', sans-serif !important;
 }
 .cust-header span
 {
   color: #ff7716 !important;
-  font-size: 3.7rem;
+  font-size: 3rem;
   font-family: 'Philosopher', sans-serif;
 }
 
@@ -572,3 +572,4 @@
   }
 }
 
+/* read moere button*/

@@ -8,13 +8,13 @@ function navbar() {
             <div className='uk-navbar-left'>
                 <ul className='uk-navbar-nav uk-margin-medium-left'>
                     <li className='uk-hidden@m'>
-                        <a className='logo-title'>
-                            <img src= {Image.BRAND_LOGO} style={{ height: 50, width: 50 }}/> 
+                        <a className='logo-title' href='/#'>
+                            <img src= {Image.BRAND_LOGO} style={{ height: 50, width: 50 }} alt='logo'/> 
                         </a>
                     </li>
                     <li className='uk-visible@m'>
-                        <a className='logo-title'>
-                            <img src= {Image.BRAND_LOGO} style={{ height: 50, width: 50 }}/> Know your Karma
+                        <a className='logo-title' href='/#'>
+                            <img src= {Image.BRAND_LOGO} style={{ height: 50, width: 50 }} alt='logo'/> Know your Karma
                         </a>
                     </li>   
                 </ul>
@@ -24,8 +24,8 @@ function navbar() {
                 <ul className='uk-navbar-nav uk-margin-medium-right'>
                    
                     <li className='uk-visible@m'>
-                        <a href="#" className='uk-text-capitalize'>
-                            About us
+                        <a href="/#" className='uk-text-capitalize'>
+                            Book An Appointment
                         </a>
                     </li>
                     <li className='uk-visible@m'>
@@ -34,12 +34,12 @@ function navbar() {
                         </a>
                     </li> 
                     <li className='uk-visible@m'>
-                        <a href="#" className='uk-text-capitalize'>
+                        <a href="/#" className='uk-text-capitalize'>
                             Contact us
                         </a>
                     </li>
                     <li  className='uk-hidden@m'>
-                    <a href="" class="uk-margin-small-right" type="button" uk-toggle="target: #offcanvas-slide">  
+                    <a href="/#" class="uk-margin-small-right" type="button" uk-toggle="target: #offcanvas-slide">  
                         <img src= { Image.TOGGLE } style={{ height: 50, width: 50 }}/>
                     </a>
                         <div id="offcanvas-slide" uk-offcanvas="overlay: true">
@@ -56,7 +56,7 @@ function navbar() {
                                     <hr/>
                                     <li>
                                         <a href="#" className='uk-text-capitalize'>
-                                            About us
+                                            Book An Appointment
                                         </a>
                                     </li>
                                     
