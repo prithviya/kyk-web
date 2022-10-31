@@ -14,55 +14,64 @@ function Home() {
         id: 1,
         planet: "Mercury",
         image: Image.BUDHAN,
-        content: "Content 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        learnmore:  Image.MERCURY_PDF,
+        content: "Mercury is the smallest planet in the Solar System and the closest to the Sun. Its orbit around the Sun takes 87.97 Earth days, the shortest of all the Sun's planets."
       },
       {
         id: 2,
         planet: "Venus",
         image: Image.SHUKRA,
-        content: "Content 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        learnmore:  Image.VENUS_PDF,
+        content: "Venus is the second planet from the Sun. It is sometimes called Earth's sister or twin planet as it is almost as large and has a similar composition."
       },
       {
         id: 3,
         planet: "Moon",
         image: Image.CHANDRAN,
-        content: "Content 3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        learnmore:  Image.MOON_PDF,
+        content: "The Moon is Earth's only natural satellite. Its diameter is about one-quarter the diameter of the Earth. The Moon is the fifth largest satellite in the Solar System. "
       },
       {
         id: 4,
         planet: "Mars",
         image: Image.SEVAI,
-        content: "Content 4 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
+        learnmore:  Image.MARS_PDF,
+        content: "Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System, being larger than only Mercury. Mars is named for the Roman god of war."
       },
       {
         id: 5,
         planet: "Jupiter",
         image: Image.GURU,
-        content: "Content 4 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
+        learnmore:  Image.JUPITER_PDF,
+        content: "Jupiter is the third brightest natural object in the Earth's night sky after the Moon and Venus, and it has been observed since prehistoric times.  "
       },
       {
         id: 6,
         planet: "Saturn",
         image: Image.SHANI,
-        content: "Content 4 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
+        learnmore:  Image.SATURN_PDF,
+        content: "Saturn is the sixth planet from the Sun and the second-largest in the Solar System. It is a gas giant with an average radius of about nine and a half times that of Earth."
       },
       {
         id: 7,
         planet: "Ketu",
         image: Image.KETU,
-        content: "Content 4 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
+        learnmore:  Image.KETU_PDF,
+        content: "Ketu is considered responsible for moksha, sannyasa, self-realization, gnana, a wavering nature, restlessness, the endocrine system and slender physique."
       },
       {
         id: 8,
         planet: "Raahu",
         image: Image.RAHU,
-        content: "Content 4 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
+        learnmore:  Image.RAAHU_PDF,
+        content: "A lunar node is either of the two orbital nodes of the Moon, that is, the two points at which the orbit of the Moon intersects the ecliptic."
       },
       {
         id: 9,
         planet: "Sun",
         image: Image.SURYA,
-        content: "Content 4 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
+        learnmore:  Image.SUN_PDF,
+        content: "The Sun is the star at the center of the Solar System. It is a nearly perfect ball of hot plasma, heated to incandescence by nuclear fusion reactions in its core."
       },
     ];
     console.log(planet);
@@ -439,6 +448,7 @@ function Home() {
                             <div class="uk-card uk-padding-large uk-padding-remove-top uk-text-center">
                                 <h1 className='uk-margin-top custom-tab-title'>{item.planet}</h1>
                                 <p className='uk-margin-top'>{item.content}</p>
+                                <button className='uk-align-center'><a href={item.learnmore} download='9 planets files' target='_blank'> Readmore </a></button>
                             </div>
                             
                         </>
@@ -447,13 +457,6 @@ function Home() {
                 )}
                 
                 </div>
-                <button className='button uk-text-center uk-align-center' type='button'  data-uk-toggle="target: #read_morebutton">Submit</button>
-                            
-                            <div id="read_morebutton" data-uk-modal>
-                                <div class="uk-modal-dialog uk-padding-large">
-                                    Content 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.                                           
-                                </div>
-                            </div>
             </div>
             <div className='uk-section uk-hidden@m'>
                <div className='uk-container'>

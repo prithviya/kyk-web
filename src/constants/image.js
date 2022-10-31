@@ -22,4 +22,14 @@ export default
     KETU: require("../images/ketu.png"),
     GURU: require("../images/Guru.png"),
     TOGGLE: require("../images/toggle.png"),
+    // pdf
+    JUPITER_PDF: require("../images/pdf/jupiter.pdf"),
+    KETU_PDF: require("../images/pdf/ketu.pdf"),
+    MERCURY_PDF: require("../images/pdf/mercury.pdf"),
+    MOON_PDF: require("../images/pdf/moon.pdf"),
+    RAAHU_PDF: require("../images/pdf/raahu.pdf"),
+    SATURN_PDF: require("../images/pdf/saturn.pdf"),
+    VENUS_PDF: require("../images/pdf/venus.pdf"),
+    MARS_PDF: require("../images/pdf/mars.pdf"),   
+    SUN_PDF: require("../images/pdf/sun.pdf"),  
 };
