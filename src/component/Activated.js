@@ -18,7 +18,7 @@ function Activated() {
                             <div className='underline-text2 uk-margin-top'>
                                 <h1 className='cust-head uk-margin-remove'>How to Activate your <span>Grahas</span></h1>
                             </div>
-                            <p className='uk-margin-top'>
+                            <p className='uk-margin-top uk-text-justify'>
                                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                                 sed do eiusmod tempor incididunt ut labore et dolore
                                 magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -29,7 +29,7 @@ function Activated() {
                                 non proident, sunt in culpa qui officia deserunt mollit
                                 anim id est laborum."
                             </p><br/>
-                            <p>
+                            <p className='uk-text-justify'>
                                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                                 sed do eiusmod tempor incididunt ut labore et dolore
                                 magna aliqua. Ut enim ad minim veniam, quis nostrud

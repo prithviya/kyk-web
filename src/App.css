@@ -536,17 +536,11 @@
 .uk-modal-dialog 
 {
   background-image: url(./images/popup.png) !important;
-  position: relative;
-  box-sizing: border-box;
-  margin: 0 auto;
   width: 100% !important;
   max-width: auto !important;
-  background: none;
+  background-repeat: no-repeat !important;
   background-size: cover !important;
-  opacity: 0;
-  transform: translateY(-100px);
-  transition: .3s linear;
-  transition-property: opacity,transform;
+  background-position: relative !important;
 }
 .uk-subnav-pill>.uk-active>a {
   background-color: transparent !important;

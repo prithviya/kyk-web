@@ -11,8 +11,7 @@ function testimonial() {
                     <h1 className='cust-head uk-margin-remove'>What our <span>Customers </span>Say</h1>
                 </div>
                 <p className='uk-margin-top'>
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    <br/> eiusmod tempor incididunt ut labore et dolore"
+                    What Client Say About Us?
                 </p>
             </div>            
             <div>
@@ -98,7 +97,7 @@ function testimonial() {
                                                 </div>
                                                 <div className="profile-card__cnt js-profile-cnt">
                                                     <p>
-                                                    I met you for my son’s performance in studies and his disobedience. I was worried about his future. I thought you would just do some Pooja but instead, you advised 3 rules to activate Guru and Budhan Grahas.  Amazing results! 
+                                                    I felt relieved after the first session with you and got the hope that by following your suggestions, I can find solutions to my problems. You have a positive way of analyzing the problem. Excellent counselling sir…. Hats off to you sir.
                                                     </p>
                                                     <i>
                                                         <h4>
@@ -125,7 +124,7 @@ function testimonial() {
                                                     </p>
                                                     <i className=''>
                                                         <h4>
-                                                            - Vinoth
+                                                            - Venu
                                                         </h4>
                                                     </i>
                                                 </div>
@@ -262,7 +261,7 @@ function testimonial() {
                                                 </div>
                                                 <div className="profile-card__cnt js-profile-cnt">
                                                     <p>
-                                                        Nagaraj sir, it was a pleasure meeting you. You are quite different as an astrologer. If possible please arrange a workshop for us, it will be more useful to know how to activate and deactivate each Graha sir
+                                                        Nagaraj sir, it was a pleasure meeting you. You are quite different as an astrologer. If possible please arrange a workshop for us, it will be more useful to know how to activate and deactivate each Grahas sir
                                                     </p>
                                                     <i>
                                                         <h4>

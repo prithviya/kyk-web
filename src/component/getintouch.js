@@ -36,11 +36,20 @@ function getintouch() {
                                         <InputGroup>
                                             <InputLeftElement
                                             pointerEvents='none'
+                                            children={<CalendarIcon color='gray.300' />}
+                                            />
+                                            <Input type='time' variant='flushed' placeholder='Time of Birth
+    ' _placeholder={{ color: 'inherit' }} width={'80%'} />
+                                        </InputGroup>
+                                        <InputGroup>
+                                            <InputLeftElement
+                                            pointerEvents='none'
                                             children={<InfoOutlineIcon color='gray.300' />}
                                             />
                                             <Input type='text' variant='flushed' placeholder='Date of Place
     ' _placeholder={{ color: 'inherit' }} width={'80%'} />
                                         </InputGroup>
+                                        
                                         <RadioGroup defaultValue='1' ml={'5'}>
                                             <Stack spacing={5} direction='row'>
                                                 <Radio colorScheme='orange' value='1'>

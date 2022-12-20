@@ -11,9 +11,19 @@ import Testimonial from './testimonial';
 import Whatwe from './Whatwe';
 import Getintouch from './getintouch';
 import Activated from './Activated';
-
+import MERCURY_PDF from '../images/pdf/mercury.pdf';
+import JUPITER_PDF from '../images/pdf/jupiter.pdf';
+import KETU_PDF from '../images/pdf/ketu.pdf';
+import MOON_PDF from '../images/pdf/moon.pdf';
+import RAAHU_PDF from '../images/pdf/raahu.pdf';
+import SATURN_PDF from '../images/pdf/saturn.pdf';
+import VENUS_PDF from '../images/pdf/venus.pdf';
+import MARS_PDF from '../images/pdf/mars.pdf';   
+import SUN_PDF from '../images/pdf/sun.pdf'; 
+import GoogleMapReact from 'google-map-react';
 
 function Home() {
+    
     const [planet, setPlanet] = useState(1); // 0 is assigned to first planet and image
 
     const planetObj = [
@@ -149,65 +159,83 @@ function Home() {
                                 <img alt='planets' src={ Image.BUDHAN} />
                                 <h1 className='uk-margin-top custom-tab-title'>Mercury</h1>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    <button className='uk-align-center'>
+                                        <a href={ MERCURY_PDF } rel="noreferrer noopener" download='9 planets files' target='_blank' > Readmore </a>
+                                    </button>
                                 </p>
                             </li>
                             <li>
                                 <img alt='planets' src={ Image.SHUKRA} />
                                 <h1 className='uk-margin-top custom-tab-title'>Venus</h1>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    <button className='uk-align-center'>
+                                        <a href={ VENUS_PDF } rel="noreferrer noopener" download='9 planets files' target='_blank' > Readmore </a>
+                                    </button>
                                 </p>
                             </li>
                             <li>
                                 <img alt='planets' src={ Image.CHANDRAN} />
                                 <h1 className='uk-margin-top custom-tab-title'>Moon</h1>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    <button className='uk-align-center'>
+                                        <a href={ MOON_PDF } rel="noreferrer noopener" download='9 planets files' target='_blank' > Readmore </a>
+                                    </button>
                                 </p>
                             </li>
                             <li>
                                 <img alt='planets' src={ Image.SURYA} />
                                 <h1 className='uk-margin-top custom-tab-title'>Sun</h1>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    <button className='uk-align-center'>
+                                        <a href={ SUN_PDF } rel="noreferrer noopener" download='9 planets files' target='_blank' > Readmore </a>
+                                    </button>
                                 </p>
                             </li>
                             <li>
                                 <img alt='planets' src={ Image.SEVAI} />
                                 <h1 className='uk-margin-top custom-tab-title'>Mars</h1>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    <button className='uk-align-center'>
+                                        <a href={MARS_PDF } rel="noreferrer noopener" download='9 planets files' target='_blank' > Readmore </a>
+                                    </button>
                                 </p>
                             </li>
                             <li>
                                 <img alt='planets' src={ Image.GURU} />
                                 <h1 className='uk-margin-top custom-tab-title'>Jupiter</h1>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    <button className='uk-align-center'>
+                                        <a href={JUPITER_PDF} rel="noreferrer noopener" download='9 planets files' target='_blank' > Readmore </a>
+                                    </button>
                                 </p>
                             </li>
                             <li>
                                 <img alt='planets' src={ Image.SHANI} />
                                 <h1 className='uk-margin-top custom-tab-title'>Saturn</h1>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    <button className='uk-align-center'>
+                                        <a href={SATURN_PDF} rel="noreferrer noopener" download='9 planets files' target='_blank' > Readmore </a>
+                                    </button>
                                 </p>
                             </li>
                             <li>
                                 <img alt='planets' src={ Image.KETU} />
                                 <h1 className='uk-margin-top custom-tab-title'>Ketu</h1>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    <button className='uk-align-center'>
+                                        <a href={KETU_PDF} rel="noreferrer noopener" download='9 planets files' target='_blank' > Readmore </a>
+                                    </button>
                                 </p>
                             </li>
                             <li>
                                 <img alt='planets' src={ Image.RAHU} />
                                 <h1 className='uk-margin-top custom-tab-title'>Raahu</h1>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    <button className='uk-align-center'>
+                                        <a href={RAAHU_PDF} rel="noreferrer noopener" download='9 planets files' target='_blank' > Readmore </a>
+                                    </button>
                                 </p>
-                            </li>
+                            </li> 
                             
                         </ul>
 
@@ -262,40 +290,38 @@ function Home() {
                             </p>
                             
                             <div className="uk-child-width-1-4@m uk-child-width-1-2 uk-grid-small uk-grid-match uk-margin" data-uk-grid>
-                                <div>
+                                {/* <div>
                                     <div className="uk-card uk-card-secondary custom-secondary uk-card-body">
-                                        <img alt='planets' src={ Image.WHATSAPP }/>
+                                        <a href="https://api.whatsapp.com/send/?phone=916383956452&amp;text=Hi,&amp;app_absent=0">
+                                            <img alt='planets' src={ Image.WHATSAPP }/>
+                                        </a>
                                     </div>
-                                </div>
-                                <div>
+                                </div> */}
+                                {/* <div>
                                     <div className="uk-card uk-card-secondary custom-secondary uk-card-body">
                                         <img alt='planets' src={ Image.INSTAGRAM }/>
                                     </div>
                                 </div>
-                                <div>
-                                    <div className="uk-card uk-card-secondary custom-secondary uk-card-body">
-                                        <img alt='planets' src={ Image.TWITTER }/>
-                                    </div>
-                                </div>
+
                                 <div>
                                     <div className="uk-card uk-card-secondary custom-secondary uk-card-body">
                                         <img alt='planets' src={ Image.FACEBOOK }/>
                                     </div>
-                                </div>
+                                </div> */}
                             </div>
                             <div>
-                                <div className="uk-child-width-1-3@m uk-text-center uk-grid-small uk-grid-match" data-uk-grid>
+                                <div className="uk-child-width-1-1@m uk-text-left uk-grid-small uk-grid-match" data-uk-grid>
                                     <div>
                                         <div className="uk-card cust-card">
-                                            <a href='info@kyk.in'>
-                                                <i className="fa-solid fa-envelope uk-margin-small-right"></i>info@kyk.in
+                                            <a href='Mailto:knowyourkarmakyk@gmail.com'>
+                                                <i className="fa-solid fa-envelope uk-margin-small-right"></i>knowyourkarmakyk@gmail.com
                                             </a>
                                         </div>
                                     </div>
                                     <div>
                                         <div className="uk-card cust-card">
-                                            <a href='+91 12345 67890'>
-                                                <i className="fa-solid fa-phone uk-margin-small-right"></i>1234567890
+                                            <a href='tel:+916383956452'>
+                                                <i className="fa-solid fa-phone uk-margin-small-right"></i>+916383956452
                                             </a>
                                         </div>
                                     </div>
@@ -304,6 +330,17 @@ function Home() {
                                             <a href='+91 12345 67890'>
                                             <i className="fa-solid fa-location-dot uk-margin-small-right"></i>location
                                             </a>
+                                            {/* <GoogleMapReact
+        bootstrapURLKeys={{ key: "" }}
+        defaultCenter={defaultProps.center}
+        defaultZoom={defaultProps.zoom}
+      >
+        <AnyReactComponent
+          lat={59.955413}
+          lng={30.337844}
+          text="My Marker"
+        />
+      </GoogleMapReact> */}
                                         </div>
                                     </div>
                                 </div>
