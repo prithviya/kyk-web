@@ -1,8 +1,10 @@
 import React from 'react';
-import { Input, Stack, InputGroup} from "@chakra-ui/react";
 import Image from '../constants/image';
+import POSTER_IMG_1 from '../images/poster/img-1.jpeg';
+
 
 function about() {
+
   return (
     <div>
          {/* carousel */}
@@ -19,76 +21,36 @@ function about() {
                     <h1 className='cust-head uk-margin-small uk-margin-top'>Recent <span>Updates</span></h1>
                     <div class="uk-child-width-1-3@m uk-grid-small uk-grid-match" data-uk-grid>
                         <div>
-                            <div class="uk-card uk-card-default uk-card-body">
+                            <div class="uk-card uk-card-body">
                                 <h1 className='cust-head uk-margin-small uk-margin-top'>Pooja <span>Requires</span></h1>
-                               
-                                <button className='clickhere' type='button'  data-uk-toggle="target: #modal-pooja-requires">Apply</button>
-                            
-                            <div id="modal-pooja-requires" className='uk-modal-container' data-uk-modal>
-                                <div className="uk-modal-dialog uk-padding-large">
-                                    <button className="uk-modal-close-default" type="button" data-uk-close></button>
-                                    <div className=''>
-                                        <h1 className='cust-head uk-margin-remove uk-text-center'>Personal <span>Details</span></h1>
-                                        <div class="uk-child-width-1-2@s uk-grid-match" data-uk-grid>
-                                            <div>
-                                                <div class="uk-card uk-card-body">
-                                                    <div>
-                                                        <Stack spacing={25} mt={5}>
-                                                            <InputGroup>
-                                                                <Input type='text' variant='flushed' placeholder='Name' _placeholder={{ color: 'inherit' }} />
-                                                            </InputGroup>
-                                                            <InputGroup>
-                                                                <Input type='number' variant='flushed' placeholder='Phoneno' _placeholder={{ color: 'inherit' }} maxLength={10} />
-                                                            </InputGroup>
-                                                            <InputGroup>
-                                                                <Input type='text' variant='flushed' placeholder='DOB' _placeholder={{ color: 'inherit' }} />
-                                                            </InputGroup>
-                                                            <InputGroup>
-                                                                <Input type='text' variant='flushed' placeholder='Rasi' _placeholder={{ color: 'inherit' }} />
-                                                            </InputGroup>
-                                                            <InputGroup>
-                                                                <Input type='text' variant='flushed' placeholder='Natchathiram' _placeholder={{ color: 'inherit' }} />
-                                                            </InputGroup>
-                                                            <InputGroup>
-                                                                <Input type='text' variant='flushed' placeholder='Email
-                            ' _placeholder={{ color: 'inherit' }} />
-                                                            </InputGroup>
-                                                            <InputGroup>
-                                                                <Input type='text' variant='flushed' placeholder='Reason'
-                            _placeholder={{ color: 'inherit' }} />
-                                                            </InputGroup>
-                                                            <br/>
-                                                        </Stack>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <div className=''>
-                                                    <div className="uk-card-body custom-position-center">
-                                                        <img src= {Image.CHAKRA} alt='chakra iamges' />
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className='uk-text-center'>
-                                            <p className='custom-pop-title uk-text-capitalize'>Click Unlock to know more</p><br/>
-                                            <a href='tel:+916383956452'>
-                                                <button className='know_btn_pop' type='button'>Know More</button>
-                                            </a>
-                                        </div>
-                                    </div>                                               
-                                </div>
-                            </div>
+                                <button className='clickhere' type='button'>Apply</button>    
                             </div>
                         </div>
                        <div>
-                            <div data-uk-slider='animation: push; autoplay:true; autoplay-interval: 2800; pause-on-hover: true;'>
+                            <div data-uk-slider='animation: push; autoplay:true; autoplay-interval: 3200; pause-on-hover: true;'>
                                 <ul className="uk-slider-items">                            
                                     <li className="uk-width-1-1">
                                         <div className="uk-card uk-card-default uk-padding uk-width-1-1@m">
                                             <b className='uk-margin-small'>Pradosham</b>
                                             <p className='uk-margin-small'>Date : 04-01-2023</p>
-                                            <p className='uk-margin-small'>Time :</p>
+                                            <div class="uk-clearfix uk-text-center">
+                                                <div class="uk-float-left">
+                                                    <a href={ POSTER_IMG_1 } download="Brochure.jpeg"  loading="lazy" className='custom-align-center' style={{textDecoration:'none'}}>
+                                                        <button className='uk-button uk-margin-small-right' type='button'>
+                                                            <img src="https://img.icons8.com/sf-regular/32/FFFFFF/downloading-updates.png" alt="download icon"/>
+                                                        </button>
+                                                    </a>
+                                                </div>
+                                                <div class="uk-float-right">
+                                                <button class="uk-button uk-margin-small-right" type="button" data-uk-toggle="target: #modal-example"><img src="https://img.icons8.com/windows/32/FFFFFF/visible--v1.png" alt='view icon'/></button>
+
+                                                    <div id="modal-example" data-uk-modal>
+                                                        <div class="uk-modal-dialog uk-modal-body uk-text-center">
+                                                            <img src= {Image.POSTER_1}  width={'450px'} height={'450px'} alt='chakra_iamges' />                                                           
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </li>
                                     <li className='uk-width-1-1'>
@@ -112,11 +74,28 @@ function about() {
                                             <p className='uk-margin-small'>Time :</p>
                                         </div>
                                     </li>
-                                    <li className='uk-width-1-1'>
+                                    <li className="uk-width-1-1">
                                         <div className="uk-card uk-card-default uk-padding uk-width-1-1@m">
-                                            <b className='uk-margin-small'>Ashtami</b>
+                                            <b className='uk-margin-small'>Ashtami (valarpirai)</b>
                                             <p className='uk-margin-small'>Date : 14-01-2023</p>
-                                            <p className='uk-margin-small'>Time :</p>
+                                            <div class="uk-clearfix uk-text-center">
+                                                <div class="uk-float-left">
+                                                    <a href={ POSTER_IMG_1 } download="Brochure.jpeg"  loading="lazy" className='custom-align-center' style={{textDecoration:'none'}}>
+                                                        <button className='uk-button uk-margin-small-right' type='button'>
+                                                            <img src="https://img.icons8.com/sf-regular/32/FFFFFF/downloading-updates.png" alt='down icon'/>
+                                                        </button>
+                                                    </a>
+                                                </div>
+                                                <div class="uk-float-right">
+                                                <button class="uk-button uk-margin-small-right" type="button" data-uk-toggle="target: #modal-example"><img src="https://img.icons8.com/windows/32/FFFFFF/visible--v1.png" alt='show icon'/></button>
+
+                                                    <div id="modal-example" data-uk-modal>
+                                                        <div class="uk-modal-dialog uk-modal-body uk-text-center">
+                                                            <img src= {Image.POSTER_1}  width={'450px'} height={'450px'} alt='chakra_iamges' />                                                           
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </li>
                                 </ul>
@@ -147,26 +126,35 @@ function about() {
                                             <p className='uk-margin-small'>Time :</p>
                                         </div>
                                     </li>
-                                    <li className='uk-width-1-1'>
+                                    <li className="uk-width-1-1">
                                         <div className="uk-card uk-card-default uk-padding uk-width-1-1@m">
-                                            <b className='uk-margin-small'>Chaturthi</b>
-                                            <p className='uk-margin-small'>Date : 19-01-2023</p>
-                                            <p className='uk-margin-small'>Time :</p>
+                                            <b className='uk-margin-small'>Ashtami (Deipirai)</b>
+                                            <p className='uk-margin-small'>Date : 28-01-2023</p>
+                                            <div class="uk-clearfix uk-text-center">
+                                                <div class="uk-float-left">
+                                                    <a href={ POSTER_IMG_1 } download="Brochure.jpeg"  loading="lazy" className='custom-align-center' style={{textDecoration:'none'}}>
+                                                        <button className='uk-button uk-margin-small-right' type='button'>
+                                                            <img src="https://img.icons8.com/sf-regular/32/FFFFFF/downloading-updates.png" alt='download pic'/>
+                                                        </button>
+                                                    </a>
+                                                </div>
+                                                <div class="uk-float-right">
+                                                <button class="uk-button uk-margin-small-right" type="button" data-uk-toggle="target: #modal-example"><img src="https://img.icons8.com/windows/32/FFFFFF/visible--v1.png" alt='view more'/></button>
+
+                                                    <div id="modal-example" data-uk-modal>
+                                                        <div class="uk-modal-dialog uk-modal-body uk-text-center">
+                                                            <img src= {Image.POSTER_1}  width={'450px'} height={'450px'} alt='chakra_iamges' />                                                           
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </li>
-                                    <li className='uk-width-1-1'>
-                                        <div className="uk-card uk-card-default uk-padding uk-width-1-1@m">
-                                            <b className='uk-margin-small'>Chaturthi</b>
-                                            <p className='uk-margin-small'>Date : 19-01-2023</p>
-                                            <p className='uk-margin-small'>Time :</p>
-                                        </div>
-                                    </li>
+                                    </li>                                    
                                 </ul>    
                                 <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>                        
                             </div>
                         </div>
-                    </div>
-                                        
+                    </div>                                        
                 </div>
             </div>
         </div>

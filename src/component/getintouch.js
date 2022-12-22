@@ -64,7 +64,7 @@ function getintouch() {
                             
                                         <div id="modal-close-default" data-uk-modal>
                                             <div className="uk-modal-dialog uk-padding-large">
-                                                <button className="uk-modal-close-default" type="button" uk-close></button>
+                                                <button className="uk-modal-close-default" type="button" data-uk-close></button>
                                                 <div className=''>
                                                     <ul className="uk-subnav uk-subnav-pill" data-uk-switcher="animation: uk-animation-slide-left-medium, uk-animation-slide-right-medium">
                                                         

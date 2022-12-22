@@ -1,7 +1,6 @@
 import React from 'react';
 import "uikit/dist/css/uikit-core.min.css";
 import Image from '../constants/image';
-import { Input, Stack, InputGroup} from "@chakra-ui/react";
 // import { AtSignIcon, CalendarIcon, InfoOutlineIcon } from '@chakra-ui/icons';
 // import { Radio, RadioGroup } from '@chakra-ui/react';
 import { useState } from "react";
@@ -20,7 +19,8 @@ import SATURN_PDF from '../images/pdf/saturn.pdf';
 import VENUS_PDF from '../images/pdf/venus.pdf';
 import MARS_PDF from '../images/pdf/mars.pdf';   
 import SUN_PDF from '../images/pdf/sun.pdf'; 
-import GoogleMapReact from 'google-map-react';
+// import GoogleMapReact from 'google-map-react';
+import Appointment from './appointment';
 
 function Home() {
     
@@ -32,42 +32,42 @@ function Home() {
         planet: "Mercury",
         image: Image.BUDHAN,
         learnmore:  Image.MERCURY_PDF,
-        content: "Mercury is the smallest planet in the Solar System and the closest to the Sun. Its orbit around the Sun takes 87.97 Earth days, the shortest of all the Sun's planets."
+        content: "Mercury represents the principles of communication, mentality, thinking patterns, rationality/reasoning, adaptability and variability. Mercury governs schooling and education, the immediate environment of neighbors, siblings and cousins, transport over short distances, messages and forms of communication such as post, email and telephone, newspapers, journalism and writing, information gathering skills and physical dexterity. Mercury is the messenger of the gods in mythology. It is the planet of day-to-day expression and relationships. Mercury's action is to take things apart and put them back together again. It is an opportunistic planet, decidedly unemotional and curious.Mercury rules over Wednesday."
       },
       {
         id: 2,
         planet: "Venus",
         image: Image.SHUKRA,
         learnmore:  Image.VENUS_PDF,
-        content: "Venus is the second planet from the Sun. It is sometimes called Earth's sister or twin planet as it is almost as large and has a similar composition."
+        content: "Venus in astrology, known as Sukra in Hindu astrology.Venus is associated with the principles of harmony, beauty, refinement, , love, and the urge to sympathize and unite with others. It is involved with the desire for pleasure, comfort and ease. It governs romantic relations, sex (the origin of the words 'venery' and 'venereal'), marriage and business partnerships, the arts and fashion.Venus rules over FridayVenus is known as Shukra and represents wealth, pleasure.Venus rules over the eye, nose, chin, mouth, sexual organs, and kidneys, as well as bladderaffections."
       },
       {
         id: 3,
         planet: "Moon",
         image: Image.CHANDRAN,
         learnmore:  Image.MOON_PDF,
-        content: "The Moon is Earth's only natural satellite. Its diameter is about one-quarter the diameter of the Earth. The Moon is the fifth largest satellite in the Solar System. "
+        content: "Moon is associated for some with the mother, maternal instincts or the urge to nurture, the home, the need for security and the past, especially early experiences and childhood. the Moon is associated with a person's intuition, emotional make-up, unconscious habits, rhythms, memories, moods, femininity and their ability to react and adapt to those around them.In Indian astrology, the Moon is called Chandra or Soma and represents the mind, queenship and mother.Left eye of a male, right eye of female, breasts, stomach, uterus, ovaries, synovial fluid, lymphatic vessels, sympathetic nerves, bladder etc. are represented by the planet Moon in Vedic Astrology.Moon rules over on monday. "
       },
       {
         id: 4,
         planet: "Mars",
         image: Image.SEVAI,
         learnmore:  Image.MARS_PDF,
-        content: "Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System, being larger than only Mercury. Mars is named for the Roman god of war."
+        content: "Mars is associated with aggression, confrontation, energy, strength, ambition and impulsiveness. Mars governs sports, competitions and physical activities in general. The 1st-century poet Manilius, described the planet as ardent and as the lesser malefic. In medicine, Mars presides over the genitals, the muscular system, the gonads and adrenal glands. It was traditionally held to be hot and excessively dry and rules the choleric humor. It was associated with fever, accidents, trauma, pain and surgery. Mars is the passionate impulse and action, the masculine aspect, discipline, willpower and stamina.Mars rules over Tuesday."
       },
       {
         id: 5,
         planet: "Jupiter",
         image: Image.GURU,
         learnmore:  Image.JUPITER_PDF,
-        content: "Jupiter is the third brightest natural object in the Earth's night sky after the Moon and Venus, and it has been observed since prehistoric times.  "
+        content: "Jupiter is associated with the principles of growth, expansion, healing, prosperity, good fortune, and miracles. Jupiter governs long distance and foreign travel, big business and wealth, higher education, religion, and the law. It is also associated with the urge for freedom and exploration, as well with gambling and merrymaking.upiter is associated with the liver, pituitary gland, and the disposition of fats; it governs the sanguine humor. Jupiter rules over Thursday."
       },
       {
         id: 6,
         planet: "Saturn",
         image: Image.SHANI,
         learnmore:  Image.SATURN_PDF,
-        content: "Saturn is the sixth planet from the Sun and the second-largest in the Solar System. It is a gas giant with an average radius of about nine and a half times that of Earth."
+        content: "Saturn is associated with focus, precision, nobility, ethics, civility, lofty goals, career, great achievements, dedication, authority figures, stability, virtues, productiveness, valuable hard lessons learned, destiny, structures, protective roles, balance, meritocracy, conservatism, and karma (reaping what you have sown or cosmic justice) but with limitations, restrictions, boundaries, anxiety, tests, practicality, reality, and time. It concerns a person's sense of duty, commitment, responsibility, including their physical and emotional endurance in times of hardships. Saturn is fundamentally economical. It also represents concern with long-term planning or foresight.He is also the bringer of obstacles and hardship. SATURN rules over saturday."
       },
       {
         id: 7,
@@ -88,7 +88,7 @@ function Home() {
         planet: "Sun",
         image: Image.SURYA,
         learnmore:  Image.SUN_PDF,
-        content: "The Sun is the star at the center of the Solar System. It is a nearly perfect ball of hot plasma, heated to incandescence by nuclear fusion reactions in its core."
+        content: "The Sun is usually thought to represent the conscious ego, the self and its expression, personal power, pride and authority, leadership qualities and the principles of creativity, spontaneity, health and vitality, the sum of which is named the <i>life force.</i> The Sun rules over Sunday."
       },
     ];
     console.log(planet);
@@ -153,7 +153,7 @@ function Home() {
             </div>
             <div className='uk-section uk-hidden@m'>
                <div className='uk-container'>
-                    <div className="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="sets: true">
+                    <div className="uk-position-relative uk-visible-toggle uk-light" tabIndex="-1" uk-slider="sets: true">
                         <ul className="uk-slider-items uk-text-center uk-width-1-1@s">
                             <li className='uk-text-center'>
                                 <img alt='planets' src={ Image.BUDHAN} />
@@ -239,117 +239,15 @@ function Home() {
                             
                         </ul>
 
-                        <a className="uk-position-center-left uk-position-small uk-hidden-hover" rel="noreferrer noopener" href="#/" data-uk-slidenav-previous data-uk-slider-item="previous"></a>
-                        <a className="uk-position-center-right uk-position-small uk-hidden-hover" rel="noreferrer noopener" href="#/" data-uk-slidenav-next data-uk-slider-item="next"></a>
+                        {/* <a className="uk-position-center-left uk-position-small uk-hidden-hover" rel="noreferrer noopener" href="#/" data-uk-slidenav-previous data-uk-slider-item="previous"></a>
+                        <a className="uk-position-center-right uk-position-small uk-hidden-hover" rel="noreferrer noopener" href="#/" data-uk-slidenav-next data-uk-slider-item="next"></a> */}
 
                     </div>
                </div>
             </div>
         </div>
         {/* appointment */}
-        <div className='uk-section custom-light-section'>
-            <div className='uk-container'>
-                <div className="uk-child-width-1-2@m uk-grid-small uk-grid-match" data-uk-grid>
-                    <div>
-                        <div className="uk-card uk-card-secondary custom-card-secondary uk-card-body">
-                            <h3 className='cust-title uk-margin-remove'>Want to <span>Know your Karma ?</span></h3> 
-                            <h2 className='uk-margin-remove custom-title'>Book an Appoinment</h2>
-                            <div>
-                                <Stack spacing={25} mt={5}>
-                                    <InputGroup>
-                                        <Input type='text' variant='flushed' placeholder='Name' _placeholder={{ color: 'inherit' }} width={'80%'} />
-                                    </InputGroup>
-                                    <InputGroup>
-                                        <Input type='text' variant='flushed' placeholder='Email
-    ' _placeholder={{ color: 'inherit' }} width={'80%'} />
-                                    </InputGroup>
-                                    <InputGroup>
-                                        <Input type='text' variant='flushed' placeholder='Location
-    ' _placeholder={{ color: 'inherit' }} width={'80%'} />
-                                    </InputGroup>
-                                    <button className='submit' type='button'>Submit</button>
-                                </Stack>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div className="uk-card uk-padding">
-                            <div className='underline-text2'>
-                                <h1 className='cust-head uk-margin-remove'>Contact Us On</h1>
-                            </div>
-                            <p className='uk-margin-top'>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                sed do eiusmod tempor incididunt ut labore et dolore
-                                magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                exercitation ullamco laboris nisi ut aliquip ex ea
-                                commodo consequat. Duis aute irure dolor in
-                                reprehenderit in voluptate velit esse cillum dolore eu
-                                fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                                non proident, sunt in culpa qui officia deserunt mollit
-                                anim id est laborum.
-                            </p>
-                            
-                            <div className="uk-child-width-1-4@m uk-child-width-1-2 uk-grid-small uk-grid-match uk-margin" data-uk-grid>
-                                {/* <div>
-                                    <div className="uk-card uk-card-secondary custom-secondary uk-card-body">
-                                        <a href="https://api.whatsapp.com/send/?phone=916383956452&amp;text=Hi,&amp;app_absent=0">
-                                            <img alt='planets' src={ Image.WHATSAPP }/>
-                                        </a>
-                                    </div>
-                                </div> */}
-                                {/* <div>
-                                    <div className="uk-card uk-card-secondary custom-secondary uk-card-body">
-                                        <img alt='planets' src={ Image.INSTAGRAM }/>
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <div className="uk-card uk-card-secondary custom-secondary uk-card-body">
-                                        <img alt='planets' src={ Image.FACEBOOK }/>
-                                    </div>
-                                </div> */}
-                            </div>
-                            <div>
-                                <div className="uk-child-width-1-1@m uk-text-left uk-grid-small uk-grid-match" data-uk-grid>
-                                    <div>
-                                        <div className="uk-card cust-card">
-                                            <a href='Mailto:knowyourkarmakyk@gmail.com'>
-                                                <i className="fa-solid fa-envelope uk-margin-small-right"></i>knowyourkarmakyk@gmail.com
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div className="uk-card cust-card">
-                                            <a href='tel:+916383956452'>
-                                                <i className="fa-solid fa-phone uk-margin-small-right"></i>+916383956452
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div className="uk-card cust-card">
-                                            <a href='+91 12345 67890'>
-                                            <i className="fa-solid fa-location-dot uk-margin-small-right"></i>location
-                                            </a>
-                                            {/* <GoogleMapReact
-        bootstrapURLKeys={{ key: "" }}
-        defaultCenter={defaultProps.center}
-        defaultZoom={defaultProps.zoom}
-      >
-        <AnyReactComponent
-          lat={59.955413}
-          lng={30.337844}
-          text="My Marker"
-        />
-      </GoogleMapReact> */}
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <Appointment/>
         <div className='custom-get-section'>
             <div className='uk-padding-small'>
                 <p className='uk-text-center'>© 2021 Know your Karmaa. All rights reserved</p>

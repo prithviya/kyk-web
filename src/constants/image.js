@@ -32,4 +32,7 @@ export default
     VENUS_PDF: require("../images/pdf/venus.pdf"),
     MARS_PDF: require("../images/pdf/mars.pdf"),   
     SUN_PDF: require("../images/pdf/sun.pdf"),  
+
+    // pOSTER
+    POSTER_1: require("../images/poster/img-1.jpeg"),
 };
