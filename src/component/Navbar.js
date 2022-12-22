@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from '../constants/image';
+import { Link } from 'react-router-dom';
 
 function navbar() {
   return (
@@ -38,6 +39,11 @@ function navbar() {
                             Contact us
                         </a>
                     </li>
+                    <li>
+                        <Link to = "resquest">
+                            requesdt
+                        </Link>
+                    </li>
                     <li  className='uk-hidden@m'>
                     <a  href="/#" rel="noreferrer noopener"  className="uk-margin-small-right" type="button" uk-toggle="target: #offcanvas-slide">  
                         <img src= { Image.TOGGLE } alt="toggle" style={{ height: 50, width: 50 }}/>
@@ -64,6 +70,11 @@ function navbar() {
                                     <li>
                                         <a href="/#" rel="noreferrer noopener" className='uk-text-capitalize'>
                                             Contact us
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a>
+                                            request
                                         </a>
                                     </li>
                                 </ul>

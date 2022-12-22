@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from '../constants/image';
 import POSTER_IMG_1 from '../images/poster/img-1.jpeg';
-
+import { Link } from "react-scroll";
 
 function about() {
 
@@ -23,7 +23,9 @@ function about() {
                         <div>
                             <div class="uk-card uk-card-body">
                                 <h1 className='cust-head uk-margin-small uk-margin-top'>Pooja <span>Requires</span></h1>
-                                <button className='clickhere' type='button'>Apply</button>    
+                                <Link to ="request" onClick={() => { window.scrollTo({top: 0, left: 0, behavior: 'smooth'}); }}>
+                                    <button className='clickhere' type='button'>Apply</button> 
+                                </Link>   
                             </div>
                         </div>
                        <div>

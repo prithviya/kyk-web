@@ -1,8 +1,6 @@
 import React from 'react';
 import "uikit/dist/css/uikit-core.min.css";
 import Image from '../constants/image';
-// import { AtSignIcon, CalendarIcon, InfoOutlineIcon } from '@chakra-ui/icons';
-// import { Radio, RadioGroup } from '@chakra-ui/react';
 import { useState } from "react";
 import Banner from './banner';
 import About from './about';
@@ -10,15 +8,15 @@ import Testimonial from './testimonial';
 import Whatwe from './Whatwe';
 import Getintouch from './getintouch';
 import Activated from './Activated';
-import MERCURY_PDF from '../images/pdf/mercury.pdf';
-import JUPITER_PDF from '../images/pdf/jupiter.pdf';
-import KETU_PDF from '../images/pdf/ketu.pdf';
-import MOON_PDF from '../images/pdf/moon.pdf';
-import RAAHU_PDF from '../images/pdf/raahu.pdf';
-import SATURN_PDF from '../images/pdf/saturn.pdf';
-import VENUS_PDF from '../images/pdf/venus.pdf';
-import MARS_PDF from '../images/pdf/mars.pdf';   
-import SUN_PDF from '../images/pdf/sun.pdf'; 
+// import MERCURY_PDF from '../images/pdf/mercury.pdf';
+// import JUPITER_PDF from '../images/pdf/jupiter.pdf';
+// import KETU_PDF from '../images/pdf/ketu.pdf';
+// import MOON_PDF from '../images/pdf/moon.pdf';
+// import RAAHU_PDF from '../images/pdf/raahu.pdf';
+// import SATURN_PDF from '../images/pdf/saturn.pdf';
+// import VENUS_PDF from '../images/pdf/venus.pdf';
+// import MARS_PDF from '../images/pdf/mars.pdf';   
+// import SUN_PDF from '../images/pdf/sun.pdf'; 
 // import GoogleMapReact from 'google-map-react';
 import Appointment from './appointment';
 
@@ -141,9 +139,6 @@ function Home() {
                             <div className="uk-card uk-padding-large uk-padding-remove-top uk-text-center">
                                 <h1 className='uk-margin-top custom-tab-title'>{item.planet}</h1>
                                 <p className='uk-margin-top'>{item.content}</p>
-                                <button className='uk-align-center'>
-                                    <a href={item.learnmore} rel="noreferrer noopener" download='9 planets files' target='_blank' > Readmore </a>
-                                </button>
                             </div>                            
                         </>                        
                     )
@@ -158,83 +153,38 @@ function Home() {
                             <li className='uk-text-center'>
                                 <img alt='planets' src={ Image.BUDHAN} />
                                 <h1 className='uk-margin-top custom-tab-title'>Mercury</h1>
-                                <p>
-                                    <button className='uk-align-center'>
-                                        <a href={ MERCURY_PDF } rel="noreferrer noopener" download='9 planets files' target='_blank' > Readmore </a>
-                                    </button>
-                                </p>
                             </li>
                             <li>
                                 <img alt='planets' src={ Image.SHUKRA} />
                                 <h1 className='uk-margin-top custom-tab-title'>Venus</h1>
-                                <p>
-                                    <button className='uk-align-center'>
-                                        <a href={ VENUS_PDF } rel="noreferrer noopener" download='9 planets files' target='_blank' > Readmore </a>
-                                    </button>
-                                </p>
                             </li>
                             <li>
                                 <img alt='planets' src={ Image.CHANDRAN} />
                                 <h1 className='uk-margin-top custom-tab-title'>Moon</h1>
-                                <p>
-                                    <button className='uk-align-center'>
-                                        <a href={ MOON_PDF } rel="noreferrer noopener" download='9 planets files' target='_blank' > Readmore </a>
-                                    </button>
-                                </p>
                             </li>
                             <li>
                                 <img alt='planets' src={ Image.SURYA} />
                                 <h1 className='uk-margin-top custom-tab-title'>Sun</h1>
-                                <p>
-                                    <button className='uk-align-center'>
-                                        <a href={ SUN_PDF } rel="noreferrer noopener" download='9 planets files' target='_blank' > Readmore </a>
-                                    </button>
-                                </p>
                             </li>
                             <li>
                                 <img alt='planets' src={ Image.SEVAI} />
                                 <h1 className='uk-margin-top custom-tab-title'>Mars</h1>
-                                <p>
-                                    <button className='uk-align-center'>
-                                        <a href={MARS_PDF } rel="noreferrer noopener" download='9 planets files' target='_blank' > Readmore </a>
-                                    </button>
-                                </p>
                             </li>
                             <li>
                                 <img alt='planets' src={ Image.GURU} />
                                 <h1 className='uk-margin-top custom-tab-title'>Jupiter</h1>
-                                <p>
-                                    <button className='uk-align-center'>
-                                        <a href={JUPITER_PDF} rel="noreferrer noopener" download='9 planets files' target='_blank' > Readmore </a>
-                                    </button>
-                                </p>
                             </li>
                             <li>
                                 <img alt='planets' src={ Image.SHANI} />
                                 <h1 className='uk-margin-top custom-tab-title'>Saturn</h1>
-                                <p>
-                                    <button className='uk-align-center'>
-                                        <a href={SATURN_PDF} rel="noreferrer noopener" download='9 planets files' target='_blank' > Readmore </a>
-                                    </button>
-                                </p>
                             </li>
                             <li>
                                 <img alt='planets' src={ Image.KETU} />
                                 <h1 className='uk-margin-top custom-tab-title'>Ketu</h1>
-                                <p>
-                                    <button className='uk-align-center'>
-                                        <a href={KETU_PDF} rel="noreferrer noopener" download='9 planets files' target='_blank' > Readmore </a>
-                                    </button>
-                                </p>
                             </li>
                             <li>
                                 <img alt='planets' src={ Image.RAHU} />
                                 <h1 className='uk-margin-top custom-tab-title'>Raahu</h1>
-                                <p>
-                                    <button className='uk-align-center'>
-                                        <a href={RAAHU_PDF} rel="noreferrer noopener" download='9 planets files' target='_blank' > Readmore </a>
-                                    </button>
-                                </p>
                             </li> 
                             
                         </ul>
