@@ -40,7 +40,7 @@ function navbar() {
                         </a>
                     </li>
                     <li>
-                        <Link to = "resquest">
+                        <Link to = "/request">
                             requesdt
                         </Link>
                     </li>

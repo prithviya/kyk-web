@@ -595,18 +595,25 @@ form .emoji {
 textarea {
   resize: none;
 }
-input, textarea {
+input {
   background: transparent;
   color: #ff7716;
   font-size: 18px;
   padding: 10px 10px 10px 5px;
   display: block;
-  width: 100%;
+  width: 320px;
   border: none;
   border-radius: 0;
   border-bottom: 1px solid #ff7716;
 }
-input:focus, textarea:focus {
+textarea
+{
+  background: transparent;
+  width: 320px;
+  border: 1px solid;
+  border-color: #ff7716;
+}
+input:focus {
   outline: none;
 }
 input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
@@ -614,8 +621,8 @@ input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid
   font-size: 1rem;
   color: #ff7716;
 }
-input:focus ~ .bar:before, textarea:focus ~ .bar:before {
-  width: 100%;
+input:focus ~ .bar:before {
+  width: 320px;
 }
 input[type="password"] {
   letter-spacing: 0.3em;

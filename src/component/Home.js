@@ -2,6 +2,7 @@ import React from 'react';
 import "uikit/dist/css/uikit-core.min.css";
 import Image from '../constants/image';
 import { useState } from "react";
+import Navbar from './Navbar'
 import Banner from './banner';
 import About from './about';
 import Testimonial from './testimonial';
@@ -92,6 +93,7 @@ function Home() {
     console.log(planet);
   return (
     <div>
+        <Navbar/>
         <Banner/>
         <About/>
         <Whatwe/>
