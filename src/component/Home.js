@@ -145,38 +145,65 @@ function Home() {
                             <li className='uk-text-center'>
                                 <img alt='planets' src={ Image.BUDHAN} />
                                 <h1 className='uk-margin-top custom-tab-title'>Mercury</h1>
+                                <p>
+                                    Mercury represents the principles of communication, mentality, thinking patterns, rationality/reasoning, adaptability and variability. Mercury governs schooling and education, the immediate environment of neighbors, siblings and cousins, transport over short distances, messages and forms of communication such as post, email and telephone, newspapers, journalism and writing, information gathering skills and physical dexterity. Mercury is the messenger of the gods in mythology. It is the planet of day-to-day expression and relationships. Mercury's action is to take things apart and put them back together again. It is an opportunistic planet, decidedly unemotional and curious.Mercury rules over Wednesday.
+                                </p>
                             </li>
                             <li>
                                 <img alt='planets' src={ Image.SHUKRA} />
                                 <h1 className='uk-margin-top custom-tab-title'>Venus</h1>
+                                <p>
+                                    Venus in astrology, known as Sukra in Hindu astrology.Venus is associated with the principles of harmony, beauty, refinement, , love, and the urge to sympathize and unite with others. It is involved with the desire for pleasure, comfort and ease. It governs romantic relations, sex (the origin of the words 'venery' and 'venereal'), marriage and business partnerships, the arts and fashion.Venus rules over FridayVenus is known as Shukra and represents wealth, pleasure.Venus rules over the eye, nose, chin, mouth, sexual organs, and kidneys, as well as bladderaffections.
+                                </p>
                             </li>
                             <li>
                                 <img alt='planets' src={ Image.CHANDRAN} />
                                 <h1 className='uk-margin-top custom-tab-title'>Moon</h1>
+                                <p>
+                                Moon is associated for some with the mother, maternal instincts or the urge to nurture, the home, the need for security and the past, especially early experiences and childhood. the Moon is associated with a person's intuition, emotional make-up, unconscious habits, rhythms, memories, moods, femininity and their ability to react and adapt to those around them.In Indian astrology, the Moon is called Chandra or Soma and represents the mind, queenship and mother.Left eye of a male, right eye of female, breasts, stomach, uterus, ovaries, synovial fluid, lymphatic vessels, sympathetic nerves, bladder etc. are represented by the planet Moon in Vedic Astrology.Moon rules over on monday.
+                                </p>
                             </li>
                             <li>
                                 <img alt='planets' src={ Image.SURYA} />
                                 <h1 className='uk-margin-top custom-tab-title'>Sun</h1>
+                                <p>
+                                The Sun is usually thought to represent the conscious ego, the self and its expression, personal power, pride and authority, leadership qualities and the principles of creativity, spontaneity, health and vitality, the sum of which is named the <i>life force.</i> The Sun rules over Sunday.
+                                </p>
                             </li>
                             <li>
                                 <img alt='planets' src={ Image.SEVAI} />
                                 <h1 className='uk-margin-top custom-tab-title'>Mars</h1>
+                                <p>
+                                Mars is associated with aggression, confrontation, energy, strength, ambition and impulsiveness. Mars governs sports, competitions and physical activities in general. The 1st-century poet Manilius, described the planet as ardent and as the lesser malefic. In medicine, Mars presides over the genitals, the muscular system, the gonads and adrenal glands. It was traditionally held to be hot and excessively dry and rules the choleric humor. It was associated with fever, accidents, trauma, pain and surgery. Mars is the passionate impulse and action, the masculine aspect, discipline, willpower and stamina.Mars rules over Tuesday.
+                                </p>
                             </li>
                             <li>
                                 <img alt='planets' src={ Image.GURU} />
                                 <h1 className='uk-margin-top custom-tab-title'>Jupiter</h1>
+                                <p>
+                                Jupiter is associated with the principles of growth, expansion, healing, prosperity, good fortune, and miracles. Jupiter governs long distance and foreign travel, big business and wealth, higher education, religion, and the law. It is also associated with the urge for freedom and exploration, as well with gambling and merrymaking.upiter is associated with the liver, pituitary gland, and the disposition of fats; it governs the sanguine humor. Jupiter rules over Thursday.
+                                </p>
                             </li>
                             <li>
                                 <img alt='planets' src={ Image.SHANI} />
                                 <h1 className='uk-margin-top custom-tab-title'>Saturn</h1>
+                                <p>
+                                Saturn is associated with focus, precision, nobility, ethics, civility, lofty goals, career, great achievements, dedication, authority figures, stability, virtues, productiveness, valuable hard lessons learned, destiny, structures, protective roles, balance, meritocracy, conservatism, and karma (reaping what you have sown or cosmic justice) but with limitations, restrictions, boundaries, anxiety, tests, practicality, reality, and time. It concerns a person's sense of duty, commitment, responsibility, including their physical and emotional endurance in times of hardships. Saturn is fundamentally economical. It also represents concern with long-term planning or foresight.He is also the bringer of obstacles and hardship. SATURN rules over saturday.
+                                </p>
                             </li>
                             <li>
                                 <img alt='planets' src={ Image.KETU} />
                                 <h1 className='uk-margin-top custom-tab-title'>Ketu</h1>
+                                <p>
+                                Ketu is considered responsible for moksha, sannyasa, self-realization, gnana, a wavering nature, restlessness, the endocrine system and slender physique.
+                                </p>
                             </li>
                             <li>
                                 <img alt='planets' src={ Image.RAHU} />
                                 <h1 className='uk-margin-top custom-tab-title'>Raahu</h1>
+                                <p>
+                                A lunar node is either of the two orbital nodes of the Moon, that is, the two points at which the orbit of the Moon intersects the ecliptic.
+                                </p>
                             </li> 
                             
                         </ul>
