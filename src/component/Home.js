@@ -9,16 +9,6 @@ import Testimonial from './testimonial';
 import Whatwe from './Whatwe';
 import Getintouch from './getintouch';
 import Activated from './Activated';
-// import MERCURY_PDF from '../images/pdf/mercury.pdf';
-// import JUPITER_PDF from '../images/pdf/jupiter.pdf';
-// import KETU_PDF from '../images/pdf/ketu.pdf';
-// import MOON_PDF from '../images/pdf/moon.pdf';
-// import RAAHU_PDF from '../images/pdf/raahu.pdf';
-// import SATURN_PDF from '../images/pdf/saturn.pdf';
-// import VENUS_PDF from '../images/pdf/venus.pdf';
-// import MARS_PDF from '../images/pdf/mars.pdf';   
-// import SUN_PDF from '../images/pdf/sun.pdf'; 
-// import GoogleMapReact from 'google-map-react';
 import Appointment from './appointment';
 
 function Home() {

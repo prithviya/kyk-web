@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from '../constants/image';
-import { Link } from 'react-router-dom';
+
 
 function navbar() {
   return (
@@ -25,7 +25,7 @@ function navbar() {
                 <ul className='uk-navbar-nav uk-margin-medium-right'>
                    
                     <li className='uk-visible@m'>
-                        <a href="/#" rel="noreferrer noopener" className='uk-text-capitalize'>
+                        <a href="#appointment" rel="noreferrer noopener" className='uk-text-capitalize'>
                             Book An Appointment
                         </a>
                     </li>
@@ -35,15 +35,11 @@ function navbar() {
                         </a>
                     </li> 
                     <li className='uk-visible@m'>
-                        <a  href="/#" rel="noreferrer noopener" className='uk-text-capitalize'>
+                        <a href='tel:+916383956452' rel="noreferrer noopener" className='uk-text-capitalize'>
                             Contact us
                         </a>
                     </li>
-                    <li>
-                        <Link to = "/request">
-                            requesdt
-                        </Link>
-                    </li>
+                   
                     <li  className='uk-hidden@m'>
                     <a  href="/#" rel="noreferrer noopener"  className="uk-margin-small-right" type="button" uk-toggle="target: #offcanvas-slide">  
                         <img src= { Image.TOGGLE } alt="toggle" style={{ height: 50, width: 50 }}/>
@@ -63,18 +59,13 @@ function navbar() {
                                     </li>
                                     <hr/>
                                     <li>
-                                        <a href="/#" rel="noreferrer noopener" className='uk-text-capitalize'>
+                                        <a href="#appointment" rel="noreferrer noopener" className='uk-text-capitalize'>
                                             Book An Appointment
                                         </a>
                                     </li>                                    
                                     <li>
-                                        <a href="/#" rel="noreferrer noopener" className='uk-text-capitalize'>
+                                        <a href='tel:+916383956452' rel="noreferrer noopener" className='uk-text-capitalize'>
                                             Contact us
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a>
-                                            request
                                         </a>
                                     </li>
                                 </ul>

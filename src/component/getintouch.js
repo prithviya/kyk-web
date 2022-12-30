@@ -1,10 +1,22 @@
-import React from 'react';
+import React, { useRef as UseRef, useState as UseSate } from 'react';
+import emailjs from '@emailjs/browser'; 
 import Image from '../constants/image';
-import { Input, Stack, InputGroup, InputLeftElement } from "@chakra-ui/react";
-import { AtSignIcon, CalendarIcon, InfoOutlineIcon } from '@chakra-ui/icons';
-import { Radio, RadioGroup } from '@chakra-ui/react';
+
 
 function getintouch() {
+    const contactRef = UseRef();
+    const [done, setDone] = UseSate(false)
+
+    const getinform = (e) => {
+    e.preventDefault();
+    emailjs.sendForm('service_x56ik2b', 'template_dte24gb', contactRef.current, 'Z6ebx-H-iTm_3ZVpB')
+      .then((result) => {
+          console.log(result.text);
+          setDone(true)
+      }, (error) => {
+          console.log(error.text);
+      });
+  }
   return (
     <div>
         {/* get in touch */}
@@ -13,85 +25,46 @@ function getintouch() {
                 <div className='uk-container'>
                     <div className="uk-child-width-1-2@m uk-grid-small uk-grid-match" data-uk-grid>
                         <div>
-                            <div className="uk-padding uk-padding-remove-bottom uk-margin-medium-top">
+                            <div className="uk-padding-large">
                                 <h3 className='cust-title uk-margin-remove'>Want to <span>Know your Karma ?</span></h3> 
                                 <h2 className='uk-margin-remove custom-title'>Get in touch with us?</h2>
                                 <div>
-                                    <Stack spacing={25} mt={5}>
-                                        <InputGroup>
-                                            <InputLeftElement
-                                            pointerEvents='none'
-                                            children={<AtSignIcon color='gray.300' />}
-                                            />
-                                            <Input type='text' variant='flushed' placeholder='Name' _placeholder={{ color: 'inherit' }} width={'80%'} />
-                                        </InputGroup>
-                                        <InputGroup>
-                                            <InputLeftElement
-                                            pointerEvents='none'
-                                            children={<CalendarIcon color='gray.300' />}
-                                            />
-                                            <Input type='text' variant='flushed' placeholder='Date of Birth
-    ' _placeholder={{ color: 'inherit' }} width={'80%'} />
-                                        </InputGroup>
-                                        <InputGroup>
-                                            <InputLeftElement
-                                            pointerEvents='none'
-                                            children={<CalendarIcon color='gray.300' />}
-                                            />
-                                            <Input type='time' variant='flushed' placeholder='Time of Birth
-    ' _placeholder={{ color: 'inherit' }} width={'80%'} />
-                                        </InputGroup>
-                                        <InputGroup>
-                                            <InputLeftElement
-                                            pointerEvents='none'
-                                            children={<InfoOutlineIcon color='gray.300' />}
-                                            />
-                                            <Input type='text' variant='flushed' placeholder='Date of Place
-    ' _placeholder={{ color: 'inherit' }} width={'80%'} />
-                                        </InputGroup>
-                                        
-                                        <RadioGroup defaultValue='1' ml={'5'}>
-                                            <Stack spacing={5} direction='row'>
-                                                <Radio colorScheme='orange' value='1'>
-                                                Male
-                                                </Radio>
-                                                <Radio colorScheme='orange' value='2'>
-                                                Female
-                                                </Radio>
-                                            </Stack>
-                                        </RadioGroup>  
-                                        <button className='clickhere' type='button'  data-uk-toggle="target: #modal-close-default">Submit</button>
-                            
-                                        <div id="modal-close-default" data-uk-modal>
-                                            <div className="uk-modal-dialog uk-padding-large">
-                                                <button className="uk-modal-close-default" type="button" data-uk-close></button>
-                                                <div className=''>
-                                                    <ul className="uk-subnav uk-subnav-pill" data-uk-switcher="animation: uk-animation-slide-left-medium, uk-animation-slide-right-medium">
-                                                        
-                                                        <li><a href="#/"rel="noreferrer noopener">Vithi</a></li>
-                                                        <li><a href="#/"rel="noreferrer noopener">Mathi</a></li>
-                                                        <li><a href="#/"rel="noreferrer noopener">Gathi</a></li>
-                                                    </ul>
-
-                                                    <ul className="uk-switcher uk-margin">
-                                                        <li>
-                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                                                        </li>
-                                                        <li>
-                                                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-                                                        </li>
-                                                        <li>
-                                                            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. 
-                                                        </li>
-                                                    </ul>
-                                                    <div className='uk-text-center'>
-                                                        <p className='custom-pop-title uk-text-capitalize'>Click Unlock to know more</p><br/>
-                                                        <button className='know_btn_pop' type='button'>Know More</button>
-                                                    </div>
-                                                </div>                                               
-                                            </div>
+                                    <form ref={contactRef} onSubmit={getinform}>                                       
+                                        <div className="group">                                            
+                                            <input type="text" name="name" required="required" />
+                                            <span className="highlight"></span>
+                                            <span className="bar"></span>
+                                            <label>Name</label>
+                                        </div>                                  
+                                        <div className="group">                                            
+                                            <input type="date" name="dob" required="required" />
+                                            <span className="highlight"></span>
+                                            <span className="bar"></span>
+                                            {/* <label>Date of Birth</label> */}
+                                        </div> 
+                                        <div className="group">                                            
+                                            <input type="time" name="tob" required="required" step={'1'} />
+                                            <span className="highlight"></span>
+                                            <span className="bar"></span>
+                                            {/* <label>Date of Birth</label> */}
+                                        </div> 
+                                        <div className="group">                                            
+                                            <input type="text" name="pob" required="required"/>
+                                            <span className="highlight"></span>
+                                            <span className="bar"></span>
+                                            <label>Place of Birth</label>
+                                        </div> 
+                                        <div className="group">                                            
+                                            <input type="tel" name="phone" required="required"/>
+                                            <span className="highlight"></span>
+                                            <span className="bar"></span>
+                                            <label>Phone Number</label>
+                                        </div> 
+                                        <div className="btn-box">
+                                            <button className="clickhere" type="submit">Submit</button>
                                         </div>
-                                    </Stack>
+                                        <div className="clear">{done && <div style={{color: "#fd7e14", marginTop: "10px", fontSize: "18px", textAlign: "center"}}>We've received your message & will respond within 24 hours.</div>}</div>
+                                    </form>
                                 </div>
                             </div>
                         </div>

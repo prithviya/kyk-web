@@ -19,23 +19,18 @@ function Activated() {
                                 <h1 className='cust-head uk-margin-remove'>How to Activate your <span>Grahas</span></h1>
                             </div>
                             <p className='uk-margin-top uk-text-justify'>
-                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                sed do eiusmod tempor incididunt ut labore et dolore
-                                magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                exercitation ullamco laboris nisi ut aliquip ex ea
-                                commodo consequat. Duis aute irure dolor in
-                                reprehenderit in voluptate velit esse cillum dolore eu
-                                fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                                non proident, sunt in culpa qui officia deserunt mollit
-                                anim id est laborum."
+                            We are here to analyse each Graha that holds the reins of your life and study its characteristics to offer the right advice and solutions to your problems. In Astrology, every Graha (Planet) has a special characteristic and is associated to each day of the week. Hence every day is considered to be significant to do certain things, perform some actions, take decisions or conduct ceremonies on the stipulated days. They are called after some specific names in Sanskrit based on their special features and their corresponding colours are as follows:
                             </p><br/>
-                            <p className='uk-text-justify'>
-                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                sed do eiusmod tempor incididunt ut labore et dolore
-                                magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                exercitation ullamco laboris nisi ut aliquip ex ea
-                                commodo consequat.
-                            </p>
+                            <ul className='uk-list uk-list-hyphen'>
+                                <li>Monday – Chandran – White Colour </li>
+                                <li>Tuesday – Sevvaai – Red Colour</li>
+                                <li>Wednesday – Budhan – Green Colour</li>
+                                <li>Thursday – Guru – Yellow Colour</li>
+                                <li>Friday – Sukran – White colour</li>
+                                <li>Saturday – Sani, Rahu – Black or Dark blue</li>
+                                <li>Sunday – Suriyan – Orange or Red</li>
+                            </ul>
+                            
                         </div>
                     </div>
                 </div>

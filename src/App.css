@@ -601,7 +601,7 @@ input {
   font-size: 18px;
   padding: 10px 10px 10px 5px;
   display: block;
-  width: 320px;
+  width: 100%;
   border: none;
   border-radius: 0;
   border-bottom: 1px solid #ff7716;
@@ -609,7 +609,7 @@ input {
 textarea
 {
   background: transparent;
-  width: 320px;
+  width: 100%;
   border: 1px solid;
   border-color: #ff7716;
 }
@@ -622,7 +622,7 @@ input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid
   color: #ff7716;
 }
 input:focus ~ .bar:before {
-  width: 320px;
+  width: 100%;
 }
 input[type="password"] {
   letter-spacing: 0.3em;
@@ -633,8 +633,8 @@ label {
   font-weight: normal;
   position: absolute;
   pointer-events: none;
-  left: 5px;
-  top: 10px;
+  left: 1px;
+  top: 5px;
   transition: 300ms ease all;
 }
 .bar {
@@ -670,29 +670,7 @@ label {
   background-color: #ff7716;
   box-shadow: 0 7px 14px rgba(0, 0, 0, 0.18), 0 5px 5px rgba(0, 0, 0, 0.12);
 }
-/* .btn.btn-link {
-  background: #2196f3;
-  color: #d3eafd;
-}
-.btn.btn-link:hover {
-  background: #0d8aee;
-  color: #deeffd;
-}
-.btn.btn-submit {
-  background: #2196f3;
-  color: #bce0fb;
-}
-.btn.btn-submit:hover {
-  background: #0d8aee;
-  color: #deeffd;
-}
-.btn.btn-cancel {
-  background: #eee;
-}
-.btn.btn-cancel:hover {
-  background: #e1e1e1;
-  color: #8b8b8b;
-} */
+
 .btn-box {
   text-align: center;
   margin: 50px 0;
