@@ -322,7 +322,9 @@
 /* Activated */
 .custom-activated-section
 {
-  background-image: url("./images/bg-04.jpg");
+  background-image: url("./images/bg-04.jpg"); 
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 /* appointment */
 .submit
