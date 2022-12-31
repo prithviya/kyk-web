@@ -2,7 +2,9 @@ import React, { useRef as UseRef, useState as UseSate } from 'react';
 import emailjs from '@emailjs/browser'; 
 import Image from '../constants/image';
 import POSTER_IMG_1 from '../images/poster/img-1.jpeg';
-
+import POSTER_IMG_2 from '../images/poster/img-2.jpeg';
+import POSTER_IMG_3 from '../images/poster/img-3.jpeg';
+import POSTER_IMG_4 from '../images/poster/img-4.jpeg';
 
 function about() {
     const formRef = UseRef();
@@ -50,9 +52,9 @@ function about() {
                                                                     </a>
                                                                 </div>
                                                                 <div class="uk-float-right">
-                                                                <button class="uk-button uk-margin-small-right" type="button" data-uk-toggle="target: #modal-example"><img src="https://img.icons8.com/windows/32/FFFFFF/visible--v1.png" alt='view icon'/></button>
+                                                                <button class="uk-button uk-margin-small-right" type="button" data-uk-toggle="target: #modal-poster-1"><img src="https://img.icons8.com/windows/32/FFFFFF/visible--v1.png" alt='view icon'/></button>
 
-                                                                    <div id="modal-example" data-uk-modal>
+                                                                    <div id="modal-poster-1" data-uk-modal>
                                                                         <div class="uk-modal-dialog uk-modal-body uk-text-center">
                                                                             <img src= {Image.POSTER_1}  width={'450px'} height={'450px'} alt='chakra_iamges' style={{margin: 'auto'}}/>                                                           
                                                                         </div>
@@ -88,18 +90,18 @@ function about() {
                                                             <p className='uk-margin-small'>Date : 14-01-2023</p>
                                                             <div class="uk-clearfix uk-text-center">
                                                                 <div class="uk-float-left">
-                                                                    <a href={ POSTER_IMG_1 } download="Brochure.jpeg"  loading="lazy" className='custom-align-center' style={{textDecoration:'none'}}>
+                                                                    <a href={ POSTER_IMG_2 } download="Brochure.jpeg"  loading="lazy" className='custom-align-center' style={{textDecoration:'none'}}>
                                                                         <button className='uk-button uk-margin-small-right' type='button'>
                                                                             <img src="https://img.icons8.com/sf-regular/32/FFFFFF/downloading-updates.png" alt='down icon'/>
                                                                         </button>
                                                                     </a>
                                                                 </div>
                                                                 <div class="uk-float-right">
-                                                                <button class="uk-button uk-margin-small-right" type="button" data-uk-toggle="target: #modal-example"><img src="https://img.icons8.com/windows/32/FFFFFF/visible--v1.png" alt='show icon'/></button>
+                                                                <button class="uk-button uk-margin-small-right" type="button" data-uk-toggle="target: #modal-poster-2"><img src="https://img.icons8.com/windows/32/FFFFFF/visible--v1.png" alt='show icon'/></button>
 
-                                                                    <div id="modal-example" data-uk-modal>
+                                                                    <div id="modal-poster-2" data-uk-modal>
                                                                         <div class="uk-modal-dialog uk-modal-body uk-text-center">
-                                                                            <img src= {Image.POSTER_1}  width={'450px'} height={'450px'} alt='chakra_iamges' style={{margin: 'auto'}}/>                                                           
+                                                                            <img src= {Image.POSTER_2}  width={'450px'} height={'450px'} alt='chakra_iamges' style={{margin: 'auto'}}/>                                                           
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -117,7 +119,24 @@ function about() {
                                                         <div className="uk-card uk-card-default uk-padding uk-width-1-1@m">
                                                             <b className='uk-margin-small'>Pradosham</b>
                                                             <p className='uk-margin-small'>Date : 19-01-2023</p>
+                                                            <div class="uk-clearfix uk-text-center">
+                                                                <div class="uk-float-left">
+                                                                    <a href={ POSTER_IMG_3 } download="Brochure.jpeg"  loading="lazy" className='custom-align-center' style={{textDecoration:'none'}}>
+                                                                        <button className='uk-button uk-margin-small-right' type='button'>
+                                                                            <img src="https://img.icons8.com/sf-regular/32/FFFFFF/downloading-updates.png" alt='down icon'/>
+                                                                        </button>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="uk-float-right">
+                                                                <button class="uk-button uk-margin-small-right" type="button" data-uk-toggle="target: #modal-poster-3"><img src="https://img.icons8.com/windows/32/FFFFFF/visible--v1.png" alt='show icon'/></button>
 
+                                                                    <div id="modal-poster-3" data-uk-modal>
+                                                                        <div class="uk-modal-dialog uk-modal-body uk-text-center">
+                                                                            <img src= {Image.POSTER_3}  width={'450px'} height={'450px'} alt='chakra_iamges' style={{margin: 'auto'}}/>                                                           
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </li>
                                                     <li className='uk-width-1-1'>
@@ -140,18 +159,18 @@ function about() {
                                                             <p className='uk-margin-small'>Date : 28-01-2023</p>
                                                             <div class="uk-clearfix uk-text-center">
                                                                 <div class="uk-float-left">
-                                                                    <a href={ POSTER_IMG_1 } download="Brochure.jpeg"  loading="lazy" className='custom-align-center' style={{textDecoration:'none'}}>
+                                                                    <a href={ POSTER_IMG_4 } download="Brochure.jpeg"  loading="lazy" className='custom-align-center' style={{textDecoration:'none'}}>
                                                                         <button className='uk-button uk-margin-small-right' type='button'>
                                                                             <img src="https://img.icons8.com/sf-regular/32/FFFFFF/downloading-updates.png" alt='download pic'/>
                                                                         </button>
                                                                     </a>
                                                                 </div>
                                                                 <div class="uk-float-right">
-                                                                <button class="uk-button uk-margin-small-right" type="button" data-uk-toggle="target: #modal-example"><img src="https://img.icons8.com/windows/32/FFFFFF/visible--v1.png" alt='view more'/></button>
+                                                                <button class="uk-button uk-margin-small-right" type="button" data-uk-toggle="target: #modal-poster-4"><img src="https://img.icons8.com/windows/32/FFFFFF/visible--v1.png" alt='view more'/></button>
 
-                                                                    <div id="modal-example" data-uk-modal>
+                                                                    <div id="modal-poster-4" data-uk-modal>
                                                                         <div class="uk-modal-dialog uk-modal-body uk-text-center">
-                                                                            <img src= {Image.POSTER_1}  width={'450px'} height={'450px'} alt='chakra_iamges' style={{margin: 'auto'}} />                                             
+                                                                            <img src= {Image.POSTER_4}  width={'450px'} height={'450px'} alt='chakra_iamges' style={{margin: 'auto'}} />                                             
                                                                         </div>
                                                                     </div>
                                                                 </div>
