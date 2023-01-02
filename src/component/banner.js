@@ -21,7 +21,7 @@ function banner() {
                     </div>
                     <div className='uk-hidden@m'>
                         <div className="uk-card custom-position-center">
-                            <img src= { Image.BANNER_SECT} alt='image_rotate'/>
+                            <img src= { Image.BANNER_SECT} className='rotater' alt='image_rotate' style={{width:'82%'}}/>
                         </div>
                     </div>
                 </div>

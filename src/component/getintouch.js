@@ -75,7 +75,7 @@ function getintouch() {
                         </div>
                         <div className='uk-hidden@m'>
                             <div className="custom-position-center">
-                                <img src= {Image.CHAKRA} alt='chakra iamges'/>
+                                <img src= {Image.CHAKRA} alt='chakra iamges' className='rotater' style={{width:'80%'}}/>
                             </div>
                         </div>
                     </div>                    
