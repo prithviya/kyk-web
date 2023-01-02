@@ -1,6 +1,6 @@
 export default
 {
-    BRAND_LOGO: require("../images/logo.png"),
+    BRAND_LOGO: require("../images/brand.png"),
     BANNER_SECT: require("../images/banner-01.png"),
     GET_TOUCH: require("../images/bg-03.png"),
     ABOUT_SECT:  require("../images/about.png"),

@@ -10,12 +10,12 @@ function navbar() {
                 <ul className='uk-navbar-nav uk-margin-medium-left'>
                     <li className='uk-hidden@m'>
                         <a className='logo-title' href='/#'>
-                            <img src= {Image.BRAND_LOGO} style={{ height: 50, width: 50 }} alt='logo'/> 
+                            <img src= {Image.BRAND_LOGO} alt='logo'/> 
                         </a>
                     </li>
                     <li className='uk-visible@m'>
                         <a className='logo-title' href='/#'>
-                            <img src= {Image.BRAND_LOGO} style={{ height: 50, width: 50 }} alt='logo'/> Know your Karma
+                            <img src= {Image.BRAND_LOGO} alt='logo'/> 
                         </a>
                     </li>   
                 </ul>
@@ -25,7 +25,7 @@ function navbar() {
                 <ul className='uk-navbar-nav uk-margin-medium-right'>
                    
                     <li className='uk-visible@m'>
-                        <a href="#appointment" rel="noreferrer noopener" className='uk-text-capitalize'>
+                        <a href="#appointment" rel="noreferrer noopener" className='uk-text-capitalize text-blue'>
                             Book An Appointment
                         </a>
                     </li>
@@ -35,7 +35,7 @@ function navbar() {
                         </a>
                     </li> 
                     <li className='uk-visible@m'>
-                        <a href='tel:+916383956452' rel="noreferrer noopener" className='uk-text-capitalize'>
+                        <a href='tel:+916383956452' rel="noreferrer noopener" className='uk-text-capitalize text-blue'>
                             Contact us
                         </a>
                     </li>
@@ -49,14 +49,14 @@ function navbar() {
                                 <ul className='uk-list uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical'>
                                     <li className=''>
                                         <a className='logo-title' href="/#" rel="noreferrer noopener" >
-                                            <img src= {Image.BRAND_LOGO} alt='brand logo' style={{ height: 50, width: 50 }}/> 
+                                            <img src= {Image.BRAND_LOGO} alt='brand logo'/> 
                                         </a>
                                     </li>
-                                    <li>
+                                    {/* <li>
                                         <a className='logo-title' href="/#" rel="noreferrer noopener">
                                             Know your Karma
                                         </a>
-                                    </li>
+                                    </li> */}
                                     <hr/>
                                     <li>
                                         <a href="#appointment" rel="noreferrer noopener" className='uk-text-capitalize'>
