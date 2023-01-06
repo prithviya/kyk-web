@@ -34,27 +34,30 @@ function appointment() {
                                             <span className="bar"></span>
                                             <label>Name</label>
                                         </div>
-                                        <div className="group">                                            
+                                        <div className="group uk-margin-medium-top">                                            
                                             <input type="email" name="mailid" required="required" />
                                             <span className="highlight"></span>
                                             <span className="bar"></span>
                                             <label>Email</label>
                                         </div> 
-                                        <div className="group">                                            
+                                        <div className="group uk-margin-medium-top">                                            
                                             <input type="tel" name="phone" required="required" />
                                             <span className="highlight"></span>
                                             <span className="bar"></span>
                                             <label>Phone Number</label>
                                         </div> 
-                                        <div className="group">                                            
+                                        <div className="group  uk-margin-medium-top">                                            
                                             <input type="text" name="location" required="required" />
                                             <span className="highlight"></span>
                                             <span className="bar"></span>
                                             <label>Location</label>
                                         </div>  
-                                        <div className="btn-box">
-                                            <button className="clickhere" type="submit">Submit</button>
+                                        <div className="uk-text-center">
+                                            <button type="submit" class="custom-submit-btn">
+                                                <span>Submit</span>
+                                            </button>
                                         </div>
+                                        
                                         <div className="clear">{done && <div style={{color: "#fd7e14", marginTop: "10px", fontSize: "18px", textAlign: "center"}}>We've received your message & will respond within 24 hours.</div>}</div>
                                     </form>
                                 </div>

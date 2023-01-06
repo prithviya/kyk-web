@@ -32,12 +32,16 @@ function Activated() {
                             </ul>
                             <div>
                              <br/>   
-                            <button class="uk-button uk-margin-small-right clickhere" type="button" data-uk-toggle="target: #read_more">
-                                Read More
-                            </button>
-
+                             <div className="">
+                                <button class="custom-submit-btn" type="button" data-uk-toggle="target: #read_more">
+                                    Read More
+                                </button>                                           
+                            </div>
+                            
                                 <div id="read_more" data-uk-modal>
                                     <div class="uk-modal-dialog uk-modal-body uk-text-center uk-padding-large">
+                                        {/* <button class="uk-modal-close-outside" type="button" data-uk-close></button> */}
+                                        <button class="uk-modal-close-default" type="button" data-uk-close></button>
                                         <h3 className='cust-head uk-text-left'>
                                             KYK Calibrates your Life
                                         </h3>

@@ -35,34 +35,88 @@ function getintouch() {
                                             <span className="highlight"></span>
                                             <span className="bar"></span>
                                             <label>Name</label>
-                                        </div>                                  
+                                        </div>  
+                                        
+                                        <div class="uk-child-width-1-3" data-uk-grid>
+                                            <div>
+                                                <div className="group">                                            
+                                                    <input type="number" name="bornofdate" maxLength={'2'} required="required" min="1" max="31"/>
+                                                    <span className="highlight"></span>
+                                                    <span className="bar"></span>
+                                                    <label>Date</label>
+                                                </div> 
+                                            </div>
+                                            <div>
+                                                <div className="group">                                            
+                                                    <input type="number" name="bornofmonth" maxLength={'2'} required="required" min="1" max="12"/>
+                                                    <span className="highlight"></span>
+                                                    <span className="bar"></span>
+                                                    <label>Month</label>
+                                                </div> 
+                                            </div>
+                                            <div>
+                                                <div className="group">                                            
+                                                    <input type="number" name="bornofyear" maxLength={'4'} required="required" min="1940" max="2005"/>
+                                                    <span className="highlight"></span>
+                                                    <span className="bar"></span>
+                                                    <label>Year</label>
+                                                </div> 
+                                            </div>   
+                                        </div>                                          
+                                                                       
+                                        <div className="group">  
+                                            <div class="uk-child-width-1-3 uk-padding-remove" data-uk-grid>
+                                                <div>
+                                                    <div className="group">                                            
+                                                        <input type="number" name="bornoftime" maxLength={'2'} required="required" min="1" max="12"/>
+                                                        <span className="highlight"></span>
+                                                        <span className="bar"></span>
+                                                        <label>Hours</label>
+                                                    </div> 
+                                                </div>
+                                                <div>
+                                                    <div className="group">                                            
+                                                        <input type="number" name="bornofmin" maxLength={'2'} required="required" min="1" max="60"/>
+                                                        <span className="highlight"></span>
+                                                        <span className="bar"></span>
+                                                        <label>Minutes</label>
+                                                    </div> 
+                                                </div>  
+                                                
+                                                <div>
+                                                    <div className="group">                                            
+                                                        <input type="text" name="bornofdue" maxLength={'2'} required="required"/>
+                                                        <span className="highlight"></span>
+                                                        <span className="bar"></span>
+                                                        <label>Am / Pm</label>
+                                                    </div> 
+                                                </div>                                                  
+                                            </div>                                          
+                                        </div>
+ 
+                                        <div className='uk-margin-medium-top'>
+                                            <div className="group">                                            
+                                                <input type="text" name="pob" required="required"/>
+                                                <span className="highlight"></span>
+                                                <span className="bar"></span>
+                                                <label>Place of Birth</label>
+                                            </div> 
+                                        </div>
+                                        <div className="uk-margin-medium-top">                                            
                                         <div className="group">                                            
-                                            <input type="date" name="dob" required="required" />
-                                            <span className="highlight"></span>
-                                            <span className="bar"></span>
-                                            {/* <label>Date of Birth</label> */}
-                                        </div> 
-                                        <div className="group">                                            
-                                            <input type="time" name="tob" required="required" step={'1'} />
-                                            <span className="highlight"></span>
-                                            <span className="bar"></span>
-                                            {/* <label>Date of Birth</label> */}
-                                        </div> 
-                                        <div className="group">                                            
-                                            <input type="text" name="pob" required="required"/>
-                                            <span className="highlight"></span>
-                                            <span className="bar"></span>
-                                            <label>Place of Birth</label>
-                                        </div> 
-                                        <div className="group">                                            
-                                            <input type="tel" name="phone" required="required"/>
+                                            <input type="number" name="phone" required="required"/>
                                             <span className="highlight"></span>
                                             <span className="bar"></span>
                                             <label>Phone Number</label>
                                         </div> 
-                                        <div className="btn-box">
-                                            <button className="clickhere" type="submit">Submit</button>
+                                        </div> 
+                                        
+                                        <div className="uk-text-center">
+                                            <button type="submit" class="custom-submit-btn">
+                                                <span>Submit</span>
+                                            </button>
                                         </div>
+
                                         <div className="clear">{done && <div style={{color: "#fd7e14", marginTop: "10px", fontSize: "18px", textAlign: "center"}}>We've received your message & will respond within 24 hours.</div>}</div>
                                     </form>
                                 </div>

@@ -2,12 +2,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Philosopher&display=swap');
 /* @import url('https://fonts.googleapis.com/css2?family=Sen&display=swap'); */
 /* general */
+select {
+  padding: 5px;
+  color: #000;
+  font-size: 12px;
+  background: transparent;
+  -webkit-appearance: none;
+
+}
+select option{
+background-color: #82caff;
+}
 *
 {
   color: #fafafa !important;
   font-family: 'sen';
   font-size: 1rem;
   font-weight: 100;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
 }
 .uk-navbar-nav>li>a 
 {
@@ -72,7 +86,7 @@
 }
 .uk-navbar-container
 {
-  background-color: #fff !important;
+  background-color: #082841 !important;
 }
 
 .uk-divider-vertical
@@ -196,6 +210,7 @@
   background-image: url("./images/button.png");
   width: 29% !important;
   height: 50px !important;
+
 }
 @media screen and (max-width: 576px) {
   .clickhere
@@ -521,6 +536,25 @@
 {
   display: block !important;
 }
+
+.custom-submit-btn {
+  background: #ff7716;
+  text-align: center;
+  text-decoration: none;
+  border: 0;
+  outline: 0;
+  padding: 12px 35px;
+  display: inline-block;
+  transform: skew(-21deg);
+  /* Un-skew the text */
+}
+.custom-submit-btn:visited {
+  color: #fff;
+}
+.custom-submit-btn:hover {
+  background: #f09433;
+}
+
 @media screen and (min-device-width: 970px) and (max-device-width: 1240px) { 
   .custom-tab-img
   {
@@ -544,7 +578,7 @@
 }
 .uk-modal-dialog 
 {
-  background-image: url(./images/popup.png) !important;
+  background-color: #082841 !important;
   width: 100% !important;
   max-width: auto !important;
   background-repeat: no-repeat !important;
@@ -596,13 +630,14 @@ form .emoji {
 }
 .group {
   position: relative;
-  margin: 30px 0;
+  margin: 15px 0;
   font-size: 1.2rem;
 }
 textarea {
   resize: none;
 }
-input {
+
+input, select {
   background: transparent;
   color: #ff7716;
   font-size: 18px;
@@ -613,6 +648,10 @@ input {
   border-radius: 0;
   border-bottom: 1px solid #ff7716;
 }
+
+.fixed option {
+  background: #082841 !important;
+}
 textarea
 {
   background: transparent;
@@ -620,11 +659,11 @@ textarea
   border: 1px solid;
   border-color: #ff7716;
 }
-input:focus {
+input:focus, select:focus {
   outline: none;
 }
-input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
-  top: -20px;
+input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label  select:valid ~ label{
+  top: -17px;
   font-size: 1rem;
   color: #ff7716;
 }

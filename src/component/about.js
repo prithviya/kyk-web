@@ -214,8 +214,10 @@ function about() {
                                             <span className="bar"></span>
                                             <label>Reason</label>
                                         </div>
-                                        <div className="btn-box">
-                                            <button className="clickhere" type="submit">Submit</button>
+                                        <div className="uk-text-center">
+                                            <button type="submit" class="custom-submit-btn">
+                                                <span>Submit</span>
+                                            </button>
                                         </div>
                                         <div className="clear">{done && <div style={{color: "#fd7e14", marginTop: "5px", fontSize: "18px", textAlign: "center"}}>Thank you!!! For more details or enquiries contact us knowyourkarmakyk@gmail.com</div>}</div>
                                     </div>

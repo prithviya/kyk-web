@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from '../constants/image';
-
+import Logo from '../images/svgkyk.svg';
 
 function navbar() {
   return (
@@ -10,12 +10,12 @@ function navbar() {
                 <ul className='uk-navbar-nav uk-margin-medium-left'>
                     <li className='uk-hidden@m'>
                         <a className='logo-title' href='/#'>
-                            <img src= {Image.BRAND_LOGO} alt='logo'/> 
+                            <img src= {Logo} alt='logo' /> 
                         </a>
                     </li>
                     <li className='uk-visible@m'>
                         <a className='logo-title' href='/#'>
-                            <img src= {Image.BRAND_LOGO} alt='logo'/> 
+                            <img src= {Logo} alt='logo' style ={{ width:"100%" , height: "90px" }}/> 
                         </a>
                     </li>   
                 </ul>
@@ -25,7 +25,7 @@ function navbar() {
                 <ul className='uk-navbar-nav uk-margin-medium-right'>
                    
                     <li className='uk-visible@m'>
-                        <a href="#appointment" rel="noreferrer noopener" className='uk-text-capitalize text-blue'>
+                        <a href="#appointment" rel="noreferrer noopener" className='uk-text-capitalize text-white'>
                             Book An Appointment
                         </a>
                     </li>
@@ -35,7 +35,7 @@ function navbar() {
                         </a>
                     </li> 
                     <li className='uk-visible@m'>
-                        <a href='tel:+916383956452' rel="noreferrer noopener" className='uk-text-capitalize text-blue'>
+                        <a href='tel:+916383956452' rel="noreferrer noopener" className='uk-text-capitalize text-white'>
                             Contact us
                         </a>
                     </li>
