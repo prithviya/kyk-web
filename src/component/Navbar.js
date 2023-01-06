@@ -10,7 +10,7 @@ function navbar() {
                 <ul className='uk-navbar-nav uk-margin-medium-left'>
                     <li className='uk-hidden@m'>
                         <a className='logo-title' href='/#'>
-                            <img src= {Logo} alt='logo' /> 
+                            <img src= { Image.BRAND_LOGO } alt='logo' style ={{ width:"100%" , height: "57px" }} /> 
                         </a>
                     </li>
                     <li className='uk-visible@m'>
@@ -41,15 +41,15 @@ function navbar() {
                     </li>
                    
                     <li  className='uk-hidden@m'>
-                    <a  href="/#" rel="noreferrer noopener"  className="uk-margin-small-right" type="button" uk-toggle="target: #offcanvas-slide">  
-                        <img src= { Image.TOGGLE } alt="toggle" style={{ height: 50, width: 50 }}/>
+                    <a  href="/#" rel="noreferrer noopener" type="button" uk-toggle="target: #offcanvas-slide">  
+                        <img src= { Image.TOGGLE } alt="toggle" style={{ maxWidth: "100px" , maxHeight: "40px"}}/>
                     </a>
                         <div id="offcanvas-slide" uk-offcanvas="overlay: true">
                             <div className="uk-offcanvas-bar uk-flex uk-flex-column">
                                 <ul className='uk-list uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical'>
                                     <li className=''>
                                         <a className='logo-title' href="/#" rel="noreferrer noopener" >
-                                            <img src= {Image.BRAND_LOGO} alt='brand logo'/> 
+                                            <img src= {Logo} alt='brand logo'/> 
                                         </a>
                                     </li>
                                     {/* <li>
