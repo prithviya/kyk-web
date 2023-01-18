@@ -34,9 +34,12 @@ export default
     SUN_PDF: require("../images/pdf/sun.pdf"),  
 
     // pOSTER
-    POSTER_1: require("../images/poster/img-1.jpeg"),
-    POSTER_2: require("../images/poster/img-2.jpeg"),
-    POSTER_3: require("../images/poster/img-3.jpeg"),
-    POSTER_4: require("../images/poster/img-4.jpeg"),
-    POSTER_5: require("../images/poster/img-5.jpeg"),
+    POSTER_1: require("../images/poster/img-1.webp"),
+    POSTER_2: require("../images/poster/img-2.webp"),
+    POSTER_3: require("../images/poster/img-3.webp"),
+    POSTER_4: require("../images/poster/img-4.webp"),
+    POSTER_5: require("../images/poster/img-5.webp"),
+    POSTER_6: require("../images/poster/img-6.webp"),
+    POSTER_7: require("../images/poster/img-7.webp"),
+    POSTER_8: require("../images/poster/img-8.webp"),
 };
