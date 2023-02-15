@@ -8,6 +8,7 @@ import POSTER_IMG_4 from '../images/poster/img-4.webp';
 import POSTER_IMG_5 from '../images/poster/img-5.webp';
 import POSTER_IMG_6 from '../images/poster/img-6.webp';
 import POSTER_IMG_7 from '../images/poster/img-7.webp';
+import POSTER_IMG_8 from '../images/poster/img-8.webp';
 
 
 function about() {
@@ -177,6 +178,32 @@ function about() {
                                                         </div>
                                                     </li>
                                                     
+                                                    <li className='uk-width-1-1'>
+                                                        <div className="uk-card uk-card-default uk-padding uk-width-1-1@m">
+                                                            <b className='uk-margin-small'>mahashivratri</b>
+                                                            <p className='uk-margin-small'>Date : 18-02-2023</p>
+                                                            <div class="uk-clearfix uk-text-center">
+                                                                <div class="uk-float-left">
+                                                                    <a href={ POSTER_IMG_8 } download="Brochure.jpeg"  loading="lazy" className='custom-align-center' style={{textDecoration:'none'}}>
+                                                                            <button className='uk-button uk-margin-small-right' type='button'>
+                                                                            <img src="https://img.icons8.com/sf-regular/32/FFFFFF/downloading-updates.png" alt='down icon'/>
+                                                                        </button>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="uk-float-right">
+                                                                <button class="uk-button uk-margin-small-right" type="button" data-uk-toggle="target: #modal-poster-8"><img src="https://img.icons8.com/windows/32/FFFFFF/visible--v1.png" alt='show icon'/></button>
+
+                                                                    <div id="modal-poster-8" data-uk-modal>
+                                                                        <div class="uk-modal-dialog uk-modal-body uk-text-center">
+                                                                            <button class="uk-modal-close-default" type="button" data-uk-close></button>
+                                                                            <img src= {Image.POSTER_8}  width={'450px'} height={'450px'} alt='chakra_iamges' style={{margin: 'auto'}}/>                                                           
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+
                                                     <li className='uk-width-1-1'>
                                                         <div className="uk-card uk-card-default uk-padding uk-width-1-1@m">
                                                             <b className='uk-margin-small'>Shashthi</b>

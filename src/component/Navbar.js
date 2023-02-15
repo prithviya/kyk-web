@@ -35,7 +35,7 @@ function navbar() {
                         </a>
                     </li> 
                     <li className='uk-visible@m'>
-                        <a href='tel:+916383956452' rel="noreferrer noopener" className='uk-text-capitalize text-white'>
+                        <a href='tel:+917639892609' rel="noreferrer noopener" className='uk-text-capitalize text-white'>
                             Contact us
                         </a>
                     </li>

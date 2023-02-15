@@ -41,5 +41,5 @@ export default
     POSTER_5: require("../images/poster/img-5.webp"),
     POSTER_6: require("../images/poster/img-6.webp"),
     POSTER_7: require("../images/poster/img-7.webp"),
-
+    POSTER_8: require("../images/poster/img-8.webp"),
 };

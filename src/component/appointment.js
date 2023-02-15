@@ -82,7 +82,7 @@ function appointment() {
                                         </div>
                                         <div>
                                             <div className="uk-card cust-card">
-                                                <a href='tel:+916383956452'>
+                                                <a href='tel:+917639892609'>
                                                     <i className="fa-solid fa-phone uk-margin-small-right"></i>Contact Us
                                                 </a>
                                             </div>
@@ -109,7 +109,7 @@ function appointment() {
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="https://api.whatsapp.com/send/?phone=916383956452&text=Hi,&app_absent=0" target="blank">
+                                            <a href="https://api.whatsapp.com/send/?phone=917639892609&text=Hi,&app_absent=0" target="blank">
                                                 <i className="fab fa-whatsapp"></i>
                                             </a>
                                         </li>                                    
