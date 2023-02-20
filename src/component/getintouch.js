@@ -37,6 +37,15 @@ function getintouch() {
                                             <label>Name</label>
                                         </div>  
                                         
+                                        <div className='uk-margin-medium-top'>
+                                            <div className="group">                                            
+                                                <input type="text" name="gender" required="required" />
+                                                <span className="highlight"></span>
+                                                <span className="bar"></span>
+                                                <label>Gender</label>
+                                            </div> 
+                                        </div>
+                                        
                                         <div class="uk-child-width-1-3" data-uk-grid>
                                             <div>
                                                 <div className="group">                                            
