@@ -155,7 +155,7 @@ function about() {
                                                     <li className='uk-width-1-1'>
                                                         <div className="uk-card uk-card-default uk-padding uk-width-1-1@m">
                                                             <b className='uk-margin-small'>Pradosham</b>
-                                                            <p className='uk-margin-small'>Date : 18-02-2023</p>
+                                                            <p className='uk-margin-small'>Date : 4-0-2023</p>
                                                             <div class="uk-clearfix uk-text-center">
                                                                 <div class="uk-float-left">
                                                                     <a href={ POSTER_IMG_5 } download="Brochure.jpeg"  loading="lazy" className='custom-align-center' style={{textDecoration:'none'}}>
