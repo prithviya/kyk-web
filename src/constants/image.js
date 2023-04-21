@@ -39,6 +39,4 @@ export default
     POSTER_3: require("../images/poster/3.jpg"),
     POSTER_4: require("../images/poster/4.jpg"),
     POSTER_5: require("../images/poster/5.jpg"),
-    POSTER_6: require("../images/poster/6.jpg"),
-    POSTER_7: require("../images/poster/7.jpg"),
 };
