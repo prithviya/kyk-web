@@ -9,7 +9,7 @@ function getintouch() {
 
     const getinform = (e) => {
     e.preventDefault();
-    emailjs.sendForm('service_x56ik2b', 'template_dte24gb', contactRef.current, 'Z6ebx-H-iTm_3ZVpB')
+    emailjs.sendForm('service_jzs5v4y', 'template_vhfhmhc', contactRef.current, 'g37oRf3Y_-EYekRKF')
       .then((result) => {
           console.log(result.text);
           setDone(true)
@@ -20,32 +20,54 @@ function getintouch() {
   return (
     <div>
         {/* get in touch */}
-        <div className='custom-get-section'>
+        <div className='custom-get-section' id="get-section">
             <div className='uk-section'>
                 <div className='uk-container'>
                     <div className="uk-child-width-1-2@m uk-grid-small uk-grid-match" data-uk-grid>
                         <div>
-                            <div className="uk-padding-large">
+                            <div className="">
                                 <h3 className='cust-title uk-margin-remove'>Want to <span>Know your Karma ?</span></h3> 
                                 <h2 className='uk-margin-remove custom-title'>Get in touch with us?</h2>
                                 <div>
                                     <form ref={contactRef} onSubmit={getinform}>                                       
-                                        <div className="group">                                            
-                                            <input type="text" name="name" required="required" />
-                                            <span className="highlight"></span>
-                                            <span className="bar"></span>
-                                            <label>Name</label>
+                                        <div class="uk-child-width-1-2@m uk-margin-top" data-uk-grid>
+                                            <div>
+                                                <div className="group">                                            
+                                                    <input type="text" name="name" required="required" />
+                                                    <span className="highlight"></span>
+                                                    <span className="bar"></span>
+                                                    <label>Name</label>
+                                                </div> 
+                                            </div>
+                                            <div>
+                                                <div className="group">                                            
+                                                    <input type="text" name="gender" required="required" pattern="(?i)male|female" 
+    title="Please enter 'male' or 'female' (case-insensitive)" />
+                                                    <span className="highlight"></span>
+                                                    <span className="bar"></span>
+                                                    <label>Gender</label>
+                                                </div> 
+                                            </div>  
+
+                                            <div>
+                                                <div className="group">                                            
+                                                    <input type="text" name="pob" required="required"/>
+                                                    <span className="highlight"></span>
+                                                    <span className="bar"></span>
+                                                    <label>Place of Birth</label>
+                                                </div> 
+                                            </div>
+                                            <div>
+                                                <div className="group">                                            
+                                                    <input type="number" name="phone" required="required" pattern="[6789][0-9]{9}" 
+    title="Phone number start with 6-9 and remaining 9 digit with 0-9"/>
+                                                    <span className="highlight"></span>
+                                                    <span className="bar"></span>
+                                                    <label>Phone Number</label>
+                                                </div> 
+                                            </div>  
                                         </div>  
-                                        
-                                        <div className='uk-margin-medium-top'>
-                                            <div className="group">                                            
-                                                <input type="text" name="gender" required="required" />
-                                                <span className="highlight"></span>
-                                                <span className="bar"></span>
-                                                <label>Gender</label>
-                                            </div> 
-                                        </div>
-                                        
+
                                         <div class="uk-child-width-1-3" data-uk-grid>
                                             <div>
                                                 <div className="group">                                            
@@ -72,53 +94,70 @@ function getintouch() {
                                                 </div> 
                                             </div>   
                                         </div>                                          
-                                                                       
-                                        <div className="group">  
-                                            <div class="uk-child-width-1-3 uk-padding-remove" data-uk-grid>
-                                                <div>
-                                                    <div className="group">                                            
-                                                        <input type="number" name="bornoftime" maxLength={'2'} required="required" min="1" max="12"/>
-                                                        <span className="highlight"></span>
-                                                        <span className="bar"></span>
-                                                        <label>Hours</label>
-                                                    </div> 
-                                                </div>
-                                                <div>
-                                                    <div className="group">                                            
-                                                        <input type="number" name="bornofmin" maxLength={'2'} required="required" min="1" max="60"/>
-                                                        <span className="highlight"></span>
-                                                        <span className="bar"></span>
-                                                        <label>Minutes</label>
-                                                    </div> 
-                                                </div>  
-                                                
-                                                <div>
-                                                    <div className="group">                                            
-                                                        <input type="text" name="bornofdue" maxLength={'2'} required="required"/>
-                                                        <span className="highlight"></span>
-                                                        <span className="bar"></span>
-                                                        <label>Am / Pm</label>
-                                                    </div> 
-                                                </div>                                                  
-                                            </div>                                          
-                                        </div>
- 
-                                        <div className='uk-margin-medium-top'>
+
+                                        <div class="uk-child-width-1-3 uk-padding-remove" data-uk-grid>
+                                            <div>
+                                                <div className="group">                                            
+                                                    <input type="number" name="bornoftime" maxLength={'2'} required="required" min="1" max="12"/>
+                                                    <span className="highlight"></span>
+                                                    <span className="bar"></span>
+                                                    <label>Hours</label>
+                                                </div> 
+                                            </div>
+                                            <div>
+                                                <div className="group">                                            
+                                                    <input type="number" name="bornofmin" maxLength={'2'} required="required" min="1" max="60"/>
+                                                    <span className="highlight"></span>
+                                                    <span className="bar"></span>
+                                                    <label>Minutes</label>
+                                                </div> 
+                                            </div>  
+                                            
+                                            <div>
+                                                <div className="group"> 
+                                                    <select name="bornofdue" required="required">
+                                                        <option value="" disabled selected></option>
+                                                        <option value="Am">Am</option>
+                                                        <option value="Pm">Pm</option>
+                                                    </select>
+                                                    <span className="highlight"></span>
+                                                    <span className="bar"></span>
+                                                    <label>AM / PM</label>
+                                                </div> 
+                                            </div>                                                  
+                                        </div>                                          
+                                        
+                                        <div className="uk-margin-medium-top">                                            
                                             <div className="group">                                            
-                                                <input type="text" name="pob" required="required"/>
+                                                <select name="meetingFormat" required="required">
+                                                <option value="" disabled selected></option>
+                                                <option value="offline">Offline</option>
+                                                <option value="online">Online</option>
+                                                </select>
                                                 <span className="highlight"></span>
                                                 <span className="bar"></span>
-                                                <label>Place of Birth</label>
+                                                <label>Is the meeting scheduled to be offline or online?</label>
+                                            </div> 
+                                        </div> 
+
+                                        <div className='uk-margin-medium-top'>
+                                            <div className="group">                                            
+                                                <input type="email" name="email" required="required"  />
+                                                <span className="highlight"></span>
+                                                <span className="bar"></span>
+                                                <label>Email</label>
                                             </div> 
                                         </div>
-                                        <div className="uk-margin-medium-top">                                            
-                                        <div className="group">                                            
-                                            <input type="number" name="phone" required="required"/>
-                                            <span className="highlight"></span>
-                                            <span className="bar"></span>
-                                            <label>Phone Number</label>
-                                        </div> 
-                                        </div> 
+
+                                        <div className='uk-margin-medium-top'>
+                                            <div className="group">
+                                                <textarea type="textarea" name='msg' rows="3"></textarea>
+                                                <span className="highlight"></span>
+                                                <span className="bar"></span>
+                                                <label>Reason</label>
+                                            </div>
+                                        </div>
+                                       
                                         
                                         <div className="uk-text-center">
                                             <button type="submit" class="custom-submit-btn">
@@ -131,8 +170,8 @@ function getintouch() {
                                 </div>
                             </div>
                         </div>
-                        <div className='uk-visible@m'>
-                            <div className="uk-card-body custom-position-center">
+                        <div className='uk-visible@m '>
+                            <div className="custom-position-center">
                                 <img src= {Image.CHAKRA} alt='chakra iamges' className='rotater'/>
                             </div>
                         </div>
