@@ -15,7 +15,7 @@ function about() {
 
     const handleSubmit = (e) => {
     e.preventDefault();
-    emailjs.sendForm('service_k8eaft2', 'template_hiurimb', formRef.current, 'g37oRf3Y_-EYekRKF')
+    emailjs.sendForm('service_om6i4yl', 'template_hiurimb', formRef.current, 'g37oRf3Y_-EYekRKF')
       .then((result) => {
           console.log(result.text);
           setDone(true)
@@ -30,19 +30,18 @@ function about() {
             <div className='uk-section uk-text-center'>
                 <div className='uk-container'>
                     <div class="uk-text-center" data-uk-grid>
-                        <div class="uk-width-2-3@m">
+                        <div class="uk-width-2-3@m custom-position-center">
                             <div class="uk-card uk-card-body">
                                 <div className='underline-text2'>
                                     <h1 className='cust-head uk-margin-remove'>About <span>Know your Karma</span></h1>
                                 </div>
                                 <p className='uk-margin-top'>‘Know Your Karma’ is here to address this concept and ameliorate you from becoming a victim to your own actions. We are a comprehensive astrological company who strongly avow that our KARMA decides our next life based on three significant categories: VIDHI <i>(fate)</i>, MADI <i>(reasoning)</i> and GADHI <i>(state)</i>.</p>
-                                <div className='uk-container uk-padding-large uk-padding-remove-bottom uk-padding-remove-top' >
+                                {/* <div className='uk-container uk-padding-large uk-padding-remove-bottom uk-padding-remove-top' >
                                     <h1 className='cust-head uk-margin-small uk-margin-top'>Recent <span>Updates</span></h1>
                                     <div class="uk-child-width-1-2@m uk-grid-small uk-grid-match" data-uk-grid>
                                         <div>
                                             <div data-uk-slider='animation: push; autoplay:true; autoplay-interval: 3200; pause-on-hover: true;'>
                                                 <ul className="uk-slider-items"> 
-                                                   {/* pradosham */}
                                                    <li className="uk-width-1-1">
                                                         <div className="uk-card uk-card-default uk-padding uk-width-1-1@m">
                                                             <b className='uk-margin-small'>Pradosham</b>
@@ -94,7 +93,6 @@ function about() {
                                                         </div>
                                                     </li>
 
-                                                        {/* pradosham */}
                                                    <li className="uk-width-1-1">
                                                         <div className="uk-card uk-card-default uk-padding uk-width-1-1@m">
                                                             <b className='uk-margin-small'>Pradosham</b>
@@ -120,8 +118,8 @@ function about() {
                                                             </div>
                                                         </div>
                                                     </li>
-                                                    {/* sankatahara */}
-                                                    {/* <li className='uk-width-1-1'>
+                                                  
+                                                     <li className='uk-width-1-1'>
                                                         <div className="uk-card uk-card-default uk-padding uk-width-1-1@m">
                                                             <b className='uk-margin-small'>Sankatahara Chaturthi</b>
                                                             <p className='uk-margin-small'>Date : 08-May-2023</p>
@@ -170,7 +168,7 @@ function about() {
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                    </li> */}
+                                                    </li> 
                                                     
                                                 </ul>
                                                 <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
@@ -178,7 +176,7 @@ function about() {
                                         </div>
                                         
                                     </div>                                        
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                         <div class="uk-width-1-3@m">
@@ -186,25 +184,27 @@ function about() {
                             <h1 className='cust-head uk-margin-remove'>Pooja <span>Requires</span></h1>
                                 <form ref={formRef} onSubmit={handleSubmit}>
                                     <div className=''>
-                                        <div className="group">
-                                            <input type="text" name="name" required="required" />
-                                            <span className="highlight"></span>
-                                            <span className="bar"></span>
-                                            <label>Name</label>
+                                        <div className='uk-margin-medium-top'>
+                                            <div className="group">
+                                                <input type="text" name="name" required="required" />
+                                                <span className="highlight"></span>
+                                                <span className="bar"></span>
+                                                <label>Name</label>
+                                            </div>
                                         </div>
-                                        <div className="group">
+                                        <div className="group uk-margin-medium-top">
                                             <input type="tel" name='phoneno' required="required" />
                                             <span className="highlight"></span>
                                             <span className="bar"></span>
                                             <label>Phone No</label>
                                         </div>
-                                        <div className="group">
+                                        <div className="group uk-margin-medium-top">
                                             <input type="text" name='natchathiram' required="required" />
                                             <span className="highlight"></span>
                                             <span className="bar"></span>
                                             <label>Natchathiram</label>
                                         </div>       
-                                        <div className="group">
+                                        <div className="group uk-margin-medium-top">
                                             <textarea type="textarea" name='msg' rows="3" required="required"></textarea>
                                             <span className="highlight"></span>
                                             <span className="bar"></span>
