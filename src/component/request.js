@@ -1,4 +1,3 @@
-
 import { Link } from "react-scroll";
 import Image from '../constants/image';
 
