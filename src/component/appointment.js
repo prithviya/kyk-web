@@ -1,6 +1,6 @@
 import React, { useRef as UseRef, useState as UseSate } from 'react';
 import emailjs from '@emailjs/browser'; 
-
+import Image from '../constants/image';
 
 function appointment() {
     const bookRef = UseRef();
@@ -19,47 +19,20 @@ function appointment() {
   return (
     <div>
         <section id='appointment'>
-            <div className='uk-section custom-light-section'>
+            <div className='uk-section custom-activated-section'>
                 <div className='uk-container'>
                     <div className="uk-child-width-1-2@m uk-grid-small uk-grid-match" data-uk-grid>
                         <div>
-                            <div className="uk-card uk-card-secondary custom-card-secondary uk-card-body">
-                                <h3 className='cust-title uk-margin-remove'>Want to <span>Know your Karma ?</span></h3> 
-                                <h2 className='uk-margin-remove custom-title'>Book an Appoinment</h2>
-                                <div>
-                                    <form ref={bookRef} onSubmit={getinform}> 
-                                        <div className="group">                                            
-                                            <input type="text" name="name" required="required" />
-                                            <span className="highlight"></span>
-                                            <span className="bar"></span>
-                                            <label>Name</label>
-                                        </div>
-                                        <div className="group uk-margin-medium-top">                                            
-                                            <input type="email" name="mailid" required="required" />
-                                            <span className="highlight"></span>
-                                            <span className="bar"></span>
-                                            <label>Email</label>
-                                        </div> 
-                                        <div className="group uk-margin-medium-top">                                            
-                                            <input type="tel" name="phone" required="required" />
-                                            <span className="highlight"></span>
-                                            <span className="bar"></span>
-                                            <label>Phone Number</label>
-                                        </div> 
-                                        <div className="group  uk-margin-medium-top">                                            
-                                            <input type="text" name="location" required="required" />
-                                            <span className="highlight"></span>
-                                            <span className="bar"></span>
-                                            <label>Location</label>
-                                        </div>  
-                                        <div className="uk-text-center">
-                                            <button type="submit" class="custom-submit-btn">
-                                                <span>Submit</span>
-                                            </button>
-                                        </div>
-                                        
-                                        <div className="clear">{done && <div style={{color: "#fd7e14", marginTop: "10px", fontSize: "18px", textAlign: "center"}}>We've received your message & will respond within 24 hours.</div>}</div>
-                                    </form>
+                            <div className="uk-card ">
+                                <div className='uk-visible@m'>
+                                    <div className="uk-card custom-position-center">
+                                        <img src= { Image.BANNER_SECT} className='rotater' alt='image_rotate' />
+                                    </div>
+                                </div>
+                                <div className='uk-hidden@m'>
+                                    <div className="uk-card custom-position-center">
+                                        <img src= { Image.BANNER_SECT} className='rotater' alt='image_rotate' style={{width:'82%'}}/>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -82,7 +55,7 @@ function appointment() {
                                         </div>
                                         <div>
                                             <div className="uk-card cust-card">
-                                                <a href='tel:+919500064889'>
+                                                <a href='tel:+917639892609'>
                                                     <i className="fa-solid fa-phone uk-margin-small-right"></i>Contact Us
                                                 </a>
                                             </div>
@@ -109,7 +82,7 @@ function appointment() {
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="https://api.whatsapp.com/send/?phone=919500064889&text=Hi,&app_absent=0" target="blank">
+                                            <a href="https://api.whatsapp.com/send/?phone=917639892609&text=Hi,&app_absent=0" target="blank">
                                                 <i className="fab fa-whatsapp"></i>
                                             </a>
                                         </li>                                    
