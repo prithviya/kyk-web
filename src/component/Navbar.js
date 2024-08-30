@@ -25,7 +25,7 @@ function navbar() {
                 <ul className='uk-navbar-nav uk-margin-medium-right'>
                    
                     <li className='uk-visible@m'>
-                        <a href="#appointment" rel="noreferrer noopener" className='uk-text-capitalize text-white'>
+                        <a href="#get-section" rel="noreferrer noopener" className='uk-text-capitalize text-white'>
                             Book An Appointment
                         </a>
                     </li>
@@ -59,7 +59,7 @@ function navbar() {
                                     </li> */}
                                     <hr/>
                                     <li>
-                                        <a href="#appointment" rel="noreferrer noopener" className='uk-text-capitalize'>
+                                        <a href="#get-section" rel="noreferrer noopener" className='uk-text-capitalize'>
                                             Book An Appointment
                                         </a>
                                     </li>                                    
