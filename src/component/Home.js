@@ -83,7 +83,7 @@ function Home() {
     console.log(planet);
   return (
     <div>
-        <Navbar/>
+       
         <Banner/>
         <About/>
         <Whatwe/>
@@ -217,11 +217,6 @@ function Home() {
         </div>
         {/* appointment */}
         <Appointment/>
-        <div className='custom-get-section'>
-            <div className='uk-padding-small'>
-                <p className='uk-text-center'>© 2021 Know your Karmaa. All rights reserved</p>
-            </div>
-        </div>
     </div>
   )
 }
