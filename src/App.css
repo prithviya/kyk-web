@@ -115,6 +115,14 @@ background-color: #82caff;
   -webkit-overflow-scrolling: touch;
 }
 /* logo */
+ .cond-title
+{
+  font-size: 1.2rem !important;
+  color: #ff7716 !important;
+  font-family: 'Philosopher', sans-serif !important;
+  letter-spacing: 1px;
+  text-align: justify;
+}
 
 .logo-title
 {
