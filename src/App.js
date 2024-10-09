@@ -24,7 +24,7 @@ function App() {
                         <div class="uk-navbar-left">
 
                             <ul class="uk-navbar-nav">
-                              <p className='uk-text-center'>© 2021 Know your Karmaa. All rights reserved</p>
+                              <p className='uk-text-center'>© 2024 Know your Karmaa. All rights reserved</p>
                             </ul>
 
                         </div>
